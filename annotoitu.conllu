@@ -1,0 +1,1565 @@
+# text = VIRRAN MUKANA
+# sent_id = 0
+1	VIRRAN	virra	NOUN	N	Case=Gen|Number=Sing	0	root	_	start_char=0|end_char=6
+2	MUKANA	mukana	ADP	Adp	AdpType=Post	1	case	_	SpacesAfter=\r\n\r\n\r\n|start_char=7|end_char=13
+
+# text = On kirkas sunnuntainen syyskuun päivä.
+# sent_id = 1
+1	On	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	start_char=19|end_char=21
+2	kirkas	kirkas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	3	amod	_	start_char=22|end_char=28
+3	sunnuntainen	sunnuntainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	0	root	_	start_char=29|end_char=41
+4	syyskuun	syyskuu	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	start_char=42|end_char=50
+5	päivä	päivä	NOUN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	SpaceAfter=No|start_char=51|end_char=56
+6	.	.	PUNCT	Punct	_	3	punct	_	start_char=56|end_char=57
+
+# text = Mäen laidasta katselen alas ihmisvilinään pitkällä sillalla.
+# sent_id = 2
+1	Mäen	Mäki	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	start_char=58|end_char=62
+2	laidasta	laita	NOUN	N	Case=Ela|Number=Sing	3	obl	_	start_char=63|end_char=71
+3	katselen	katsella	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpacesAfter=\r\n|start_char=72|end_char=80
+4	alas	alas	ADV	Adv	_	3	advmod	_	start_char=82|end_char=86
+5	ihmisvilinään	ihmis#vili	NOUN	N	Case=Ill|Number=Sing	3	obl	_	start_char=87|end_char=100
+6	pitkällä	pitkä	ADJ	A	Case=Ade|Degree=Pos|Number=Sing	7	amod	_	start_char=101|end_char=109
+7	sillalla	silta	NOUN	N	Case=Ade|Number=Sing	3	obl	_	SpaceAfter=No|start_char=110|end_char=118
+8	.	.	PUNCT	Punct	_	3	punct	_	start_char=118|end_char=119
+
+# text = Voin erottaa ihmisten vaateparren, heidän kasvonsa ja korunsa, voin kuulla äänten soinnun ja päätellä ulkomuodosta, mille yhteiskunnan portaalle kukin heistä kuuluu.
+# sent_id = 3
+1	Voin	voida	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	2	aux	_	start_char=120|end_char=124
+2	erottaa	erottaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	start_char=125|end_char=132
+3	ihmisten	ihminen	NOUN	N	Case=Gen|Number=Plur	4	nmod:poss	_	SpacesAfter=\r\n|start_char=133|end_char=141
+4	vaateparren	vaate#parri	NOUN	N	Case=Gen|Number=Sing	2	obj	_	SpaceAfter=No|start_char=143|end_char=154
+5	,	,	PUNCT	Punct	_	7	punct	_	start_char=154|end_char=155
+6	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	7	nmod:poss	_	start_char=156|end_char=162
+7	kasvonsa	kasvot	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	4	conj	_	start_char=163|end_char=171
+8	ja	ja	CCONJ	C	_	9	cc	_	start_char=172|end_char=174
+9	korunsa	koru	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	4	conj	_	SpaceAfter=No|start_char=175|end_char=182
+10	,	,	PUNCT	Punct	_	12	punct	_	start_char=182|end_char=183
+11	voin	voida	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	12	aux	_	start_char=184|end_char=188
+12	kuulla	kuulla	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	conj	_	start_char=189|end_char=195
+13	äänten	ääni	NOUN	N	Case=Gen|Number=Plur	14	nmod:poss	_	start_char=196|end_char=202
+14	soinnun	sointu	NOUN	N	Case=Gen|Number=Sing	12	obj	_	SpacesAfter=\r\n|start_char=203|end_char=210
+15	ja	ja	CCONJ	C	_	16	cc	_	start_char=212|end_char=214
+16	päätellä	päätellä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	12	conj	_	start_char=215|end_char=223
+17	ulkomuodosta	ulko#muoto	NOUN	N	Case=Ela|Number=Sing	16	obl	_	SpaceAfter=No|start_char=224|end_char=236
+18	,	,	PUNCT	Punct	_	24	punct	_	start_char=236|end_char=237
+19	mille	mikä	PRON	Pron	Case=All|Number=Sing|PronType=Int	24	obl	_	start_char=238|end_char=243
+20	yhteiskunnan	yhteis#kunta	NOUN	N	Case=Gen|Number=Sing	21	nmod:poss	_	start_char=244|end_char=256
+21	portaalle	portaat	NOUN	N	Case=All|Number=Sing	24	obl	_	start_char=257|end_char=266
+22	kukin	kukin	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	24	nsubj	_	start_char=267|end_char=272
+23	heistä	hän	PRON	Pron	Case=Ela|Number=Plur|Person=3|PronType=Prs	22	nmod	_	SpacesAfter=\r\n|start_char=273|end_char=279
+24	kuuluu	kuulua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	17	acl:relcl	_	SpaceAfter=No|start_char=281|end_char=287
+25	.	.	PUNCT	Punct	_	2	punct	_	start_char=287|end_char=288
+
+# text = Vesi kimaltelee sillan alla nytteiden lomissa.
+# sent_id = 4
+1	Vesi	vesi	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	start_char=289|end_char=293
+2	kimaltelee	kimalrella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=294|end_char=304
+3	sillan	silta	NOUN	N	Case=Gen|Number=Sing	2	obl	_	start_char=305|end_char=311
+4	alla	alla	ADP	Adp	AdpType=Post	3	case	_	start_char=312|end_char=316
+5	nytteiden	nyte	NOUN	N	Case=Gen|Number=Plur	6	nmod:poss	_	start_char=317|end_char=326
+6	lomissa	lomi	NOUN	N	Case=Ine|Number=Plur	2	obl	_	SpaceAfter=No|start_char=327|end_char=334
+7	.	.	PUNCT	Punct	_	2	punct	_	start_char=334|end_char=335
+
+# text = Silta on tilapäinen, notkuva, puinen rakenne, palkeista ja parruista kyhätty väliaikaiseksi kulkuväyläksi, kunnes kaupungin uusi rautainen silta ojentaa vahvat käsivartensa lahdenpoukaman poikki.
+# sent_id = 5
+1	Silta	silta	NOUN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	start_char=336|end_char=341
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	SpacesAfter=\r\n|start_char=342|end_char=344
+3	tilapäinen	tilapäinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	0	root	_	SpaceAfter=No|start_char=346|end_char=356
+4	,	,	PUNCT	Punct	_	5	punct	_	start_char=356|end_char=357
+5	notkuva	notkuva	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	3	conj	_	SpaceAfter=No|start_char=358|end_char=365
+6	,	,	PUNCT	Punct	_	8	punct	_	start_char=365|end_char=366
+7	puinen	puinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	8	amod	_	start_char=367|end_char=373
+8	rakenne	rakenne	NOUN	N	Case=Nom|Number=Sing	3	conj	_	SpaceAfter=No|start_char=374|end_char=381
+9	,	,	PUNCT	Punct	_	10	punct	_	start_char=381|end_char=382
+10	palkeista	palki	NOUN	N	Case=Ela|Number=Plur	8	conj	_	start_char=383|end_char=392
+11	ja	ja	CCONJ	C	_	13	cc	_	start_char=393|end_char=395
+12	parruista	parru	NOUN	N	Case=Ela|Number=Plur	13	obl	_	start_char=396|end_char=405
+13	kyhätty	kyhätä	VERB	V	Case=Nom|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	3	conj	_	SpacesAfter=\r\n|start_char=406|end_char=413
+14	väliaikaiseksi	väli#aikainen	ADJ	A	Case=Tra|Degree=Pos|Derivation=Inen|Number=Sing	15	amod	_	start_char=415|end_char=429
+15	kulkuväyläksi	kulku#väylä	NOUN	N	Case=Tra|Number=Sing	13	xcomp:ds	_	SpaceAfter=No|start_char=430|end_char=443
+16	,	,	PUNCT	Punct	_	22	punct	_	start_char=443|end_char=444
+17	kunnes	kunnes	SCONJ	C	_	22	mark	_	start_char=445|end_char=451
+18	kaupungin	kaupunki	NOUN	N	Case=Gen|Number=Sing	21	nmod:poss	_	start_char=452|end_char=461
+19	uusi	uusi	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	21	amod	_	start_char=462|end_char=466
+20	rautainen	rautainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	21	amod	_	start_char=467|end_char=476
+21	silta	silta	NOUN	N	Case=Nom|Number=Sing	22	nsubj	_	SpacesAfter=\r\n|start_char=477|end_char=482
+22	ojentaa	ojentaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	advcl	_	start_char=484|end_char=491
+23	vahvat	vahva	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	24	amod	_	start_char=492|end_char=498
+24	käsivartensa	käsi#varsi	NOUN	N	Case=Gen|Number=Plur|Person[psor]=3	22	obj	_	start_char=499|end_char=511
+25	lahdenpoukaman	lahde#poukama	NOUN	N	Case=Gen|Number=Sing	22	obl	_	start_char=512|end_char=526
+26	poikki	poikki	ADP	Adp	AdpType=Post	25	case	_	SpaceAfter=No|start_char=527|end_char=533
+27	.	.	PUNCT	Punct	_	3	punct	_	start_char=533|end_char=534
+
+# text = Se on kyllä kestävä horjumatta ja notkumatta kaikki odottamattomat kolaukset, raskaiden raitiovaunujen kiitämisen, sotajoukon marssimisen ja ihmisten paljouden.
+# sent_id = 6
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	nsubj:cop	_	start_char=535|end_char=537
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	start_char=538|end_char=540
+3	kyllä	kyllä	ADV	Adv	_	4	advmod	_	SpacesAfter=\r\n|start_char=541|end_char=546
+4	kestävä	kestävä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	start_char=548|end_char=555
+5	horjumatta	horjuta	VERB	V	Case=Abe|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	4	xcomp:ds	_	start_char=556|end_char=566
+6	ja	ja	CCONJ	C	_	7	cc	_	start_char=567|end_char=569
+7	notkumatta	notkua	VERB	V	Case=Abe|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	5	conj	_	start_char=570|end_char=580
+8	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	10	det	_	start_char=581|end_char=587
+9	odottamattomat	odottamaton	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	10	amod	_	start_char=588|end_char=602
+10	kolaukset	kolaus	NOUN	N	Case=Nom|Number=Plur	5	obj	_	SpaceAfter=No|start_char=603|end_char=612
+11	,	,	PUNCT	Punct	_	14	punct	_	SpacesAfter=\r\n|start_char=612|end_char=613
+12	raskaiden	raskas	ADJ	A	Case=Gen|Degree=Pos|Number=Plur	13	amod	_	start_char=615|end_char=624
+13	raitiovaunujen	raitio#vaunu	NOUN	N	Case=Gen|Number=Plur	14	nmod:poss	_	start_char=625|end_char=639
+14	kiitämisen	kiitäminen	NOUN	N	Case=Gen|Derivation=Minen|Number=Sing	10	conj	_	SpaceAfter=No|start_char=640|end_char=650
+15	,	,	PUNCT	Punct	_	17	punct	_	start_char=650|end_char=651
+16	sotajoukon	sota#joukko	NOUN	N	Case=Gen|Number=Sing	17	nmod:poss	_	start_char=652|end_char=662
+17	marssimisen	marssiminen	NOUN	N	Case=Gen|Derivation=Minen|Number=Sing	14	conj	_	start_char=663|end_char=674
+18	ja	ja	CCONJ	C	_	19	cc	_	SpacesAfter=\r\n|start_char=675|end_char=677
+19	ihmisten	ihminen	NOUN	N	Case=Gen|Number=Plur	20	nmod:poss	_	start_char=679|end_char=687
+20	paljouden	paljous	NOUN	N	Case=Gen|Number=Sing	10	conj	_	SpaceAfter=No|start_char=688|end_char=697
+21	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\r\n\r\n|start_char=697|end_char=698
+
+# text = Ylhäisö palaa sunnuntaiajelultaan puistosta.
+# sent_id = 7
+1	Ylhäisö	ylhäisö	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	start_char=702|end_char=709
+2	palaa	palata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=710|end_char=715
+3	sunnuntaiajelultaan	sunnuntai#ajelu	NOUN	N	Case=Abl|Number=Sing|Person[psor]=3	2	obl	_	start_char=716|end_char=735
+4	puistosta	puisto	NOUN	N	Case=Ela|Number=Sing	2	obl	_	SpaceAfter=No|start_char=736|end_char=745
+5	.	.	PUNCT	Punct	_	2	punct	_	start_char=745|end_char=746
+
+# text = On siinä joskus kaksivaljakko, rivi välkkyviä kääsejä, pärryttäviä autoja, yksinkertaisia ajurinkärryjä, polkupyöriä ja suuren joukon itsevaltias raitiovaunu.
+# sent_id = 8
+1	On	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	start_char=747|end_char=749
+2	siinä	se	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	0	root	_	start_char=750|end_char=755
+3	joskus	joskus	ADV	Adv	_	2	advmod	_	SpacesAfter=\r\n|start_char=756|end_char=762
+4	kaksivaljakko	kaksi#valjakko	NOUN	N	Case=Nom|Number=Sing	2	nsubj:cop	_	SpaceAfter=No|start_char=764|end_char=777
+5	,	,	PUNCT	Punct	_	6	punct	_	start_char=777|end_char=778
+6	rivi	rivi	NOUN	N	Case=Nom|Number=Sing	4	conj	_	start_char=779|end_char=783
+7	välkkyviä	välkkyä	VERB	V	Case=Par|Number=Plur|PartForm=Pres|VerbForm=Part|Voice=Act	8	acl	_	start_char=784|end_char=793
+8	kääsejä	kääsi	NOUN	N	Case=Par|Number=Plur	4	conj	_	SpaceAfter=No|start_char=794|end_char=801
+9	,	,	PUNCT	Punct	_	11	punct	_	start_char=801|end_char=802
+10	pärryttäviä	pärryttävä	ADJ	A	Case=Par|Degree=Pos|Number=Plur	11	amod	_	start_char=803|end_char=814
+11	autoja	auto	NOUN	N	Case=Par|Number=Plur	4	conj	_	SpaceAfter=No|start_char=815|end_char=821
+12	,	,	PUNCT	Punct	_	14	punct	_	SpacesAfter=\r\n|start_char=821|end_char=822
+13	yksinkertaisia	yksinkertainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Plur	14	amod	_	start_char=824|end_char=838
+14	ajurinkärryjä	ajuri#kärry	NOUN	N	Case=Par|Number=Plur	4	conj	_	SpaceAfter=No|start_char=839|end_char=852
+15	,	,	PUNCT	Punct	_	16	punct	_	start_char=852|end_char=853
+16	polkupyöriä	polku#pyörä	NOUN	N	Case=Par|Number=Plur	4	conj	_	start_char=854|end_char=865
+17	ja	ja	CCONJ	C	_	21	cc	_	start_char=866|end_char=868
+18	suuren	suuri	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	19	amod	_	start_char=869|end_char=875
+19	joukon	joukko	NOUN	N	Case=Gen|Number=Sing	20	nmod:poss	_	SpacesAfter=\r\n|start_char=876|end_char=882
+20	itsevaltias	itsevaltias	NOUN	N	Case=Nom|Number=Sing	21	compound:nn	_	start_char=884|end_char=895
+21	raitiovaunu	raitio#vaunu	NOUN	N	Case=Nom|Number=Sing	4	conj	_	SpaceAfter=No|start_char=896|end_char=907
+22	.	.	PUNCT	Punct	_	2	punct	_	start_char=907|end_char=908
+
+# text = Kulkijat ovat kaikki sunnuntaiasussa ja sunnuntairavissa, tasaisesti edeten kuin virta uomassaan.
+# sent_id = 9
+1	Kulkijat	kulkija	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	4	nsubj:cop	_	start_char=909|end_char=917
+2	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	start_char=918|end_char=922
+3	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	4	det	_	start_char=923|end_char=929
+4	sunnuntaiasussa	sunnuntai#asu	NOUN	N	Case=Ine|Number=Sing	0	root	_	start_char=930|end_char=945
+5	ja	ja	CCONJ	C	_	6	cc	_	SpacesAfter=\r\n|start_char=946|end_char=948
+6	sunnuntairavissa	sunnuntai#ravi	NOUN	N	Case=Ine|Number=Plur	4	conj	_	SpaceAfter=No|start_char=950|end_char=966
+7	,	,	PUNCT	Punct	_	9	punct	_	start_char=966|end_char=967
+8	tasaisesti	tasaisesti	ADV	Adv	Derivation=Sti	9	advmod	_	start_char=968|end_char=978
+9	edeten	edetä	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	4	advcl	_	start_char=979|end_char=985
+10	kuin	kuin	SCONJ	C	_	11	mark	_	start_char=986|end_char=990
+11	virta	virta	NOUN	N	Case=Nom|Number=Sing	9	advcl	_	start_char=991|end_char=996
+12	uomassaan	uoma	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	9	obl	_	SpaceAfter=No|start_char=997|end_char=1006
+13	.	.	PUNCT	Punct	_	4	punct	_	start_char=1006|end_char=1007
+
+# text = Se onkin virran valtavuo, laaja, voimakas ja varma.
+# sent_id = 10
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	nsubj:cop	_	start_char=1008|end_char=1010
+2	onkin	olla	AUX	V	Clitic=Kin|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	SpacesAfter=\r\n|start_char=1011|end_char=1016
+3	virran	virta	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	start_char=1018|end_char=1024
+4	valtavuo	valta#vuo	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No|start_char=1025|end_char=1033
+5	,	,	PUNCT	Punct	_	6	punct	_	start_char=1033|end_char=1034
+6	laaja	laaja	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	conj	_	SpaceAfter=No|start_char=1035|end_char=1040
+7	,	,	PUNCT	Punct	_	8	punct	_	start_char=1040|end_char=1041
+8	voimakas	voimakas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	conj	_	start_char=1042|end_char=1050
+9	ja	ja	CCONJ	C	_	10	cc	_	start_char=1051|end_char=1053
+10	varma	varma	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	conj	_	SpaceAfter=No|start_char=1054|end_char=1059
+11	.	.	PUNCT	Punct	_	4	punct	_	start_char=1059|end_char=1060
+
+# text = Siinä kuljetaan hohtavin rinnoin ja välkkyvin pinnoin.
+# sent_id = 11
+1	Siinä	se	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	2	obl	_	start_char=1061|end_char=1066
+2	kuljetaan	kulkea	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	start_char=1067|end_char=1076
+3	hohtavin	hohtava	ADJ	A	Case=Ins|Degree=Pos|Number=Plur	4	amod	_	SpacesAfter=\r\n|start_char=1077|end_char=1085
+4	rinnoin	rinno	NOUN	N	Case=Ins|Number=Plur	2	obl	_	start_char=1087|end_char=1094
+5	ja	ja	CCONJ	C	_	7	cc	_	start_char=1095|end_char=1097
+6	välkkyvin	välkkyvä	ADJ	A	Case=Ins|Degree=Pos|Number=Plur	7	amod	_	start_char=1098|end_char=1107
+7	pinnoin	pinta	NOUN	N	Case=Ins|Number=Plur	4	conj	_	SpaceAfter=No|start_char=1108|end_char=1115
+8	.	.	PUNCT	Punct	_	2	punct	_	start_char=1115|end_char=1116
+
+# text = Siinä heiluu töyhdöt ja loistaa komeat keväiset puvut.
+# sent_id = 12
+1	Siinä	se	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	2	obl	_	start_char=1117|end_char=1122
+2	heiluu	heilua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=1123|end_char=1129
+3	töyhdöt	töyhtö	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	start_char=1130|end_char=1137
+4	ja	ja	CCONJ	C	_	5	cc	_	start_char=1138|end_char=1140
+5	loistaa	loistaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	SpacesAfter=\r\n|start_char=1141|end_char=1148
+6	komeat	komea	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	8	amod	_	start_char=1150|end_char=1156
+7	keväiset	keväinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Plur	8	amod	_	start_char=1157|end_char=1165
+8	puvut	puvu	NOUN	N	Case=Nom|Number=Plur	5	obj	_	SpaceAfter=No|start_char=1166|end_char=1171
+9	.	.	PUNCT	Punct	_	2	punct	_	start_char=1171|end_char=1172
+
+# text = Iloiset kasvot puhuvat toiveista, voimasta ja terveydestä.
+# sent_id = 13
+1	Iloiset	iloinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Plur	2	amod	_	start_char=1173|end_char=1180
+2	kasvot	kasvot	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	start_char=1181|end_char=1187
+3	puhuvat	puhua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=1188|end_char=1195
+4	toiveista	toive	NOUN	N	Case=Ela|Number=Plur	3	obl	_	SpaceAfter=No|start_char=1196|end_char=1205
+5	,	,	PUNCT	Punct	_	6	punct	_	start_char=1205|end_char=1206
+6	voimasta	voima	NOUN	N	Case=Ela|Number=Sing	4	conj	_	SpacesAfter=\r\n|start_char=1207|end_char=1215
+7	ja	ja	CCONJ	C	_	8	cc	_	start_char=1217|end_char=1219
+8	terveydestä	terveys	NOUN	N	Case=Ela|Number=Sing	4	conj	_	SpaceAfter=No|start_char=1220|end_char=1231
+9	.	.	PUNCT	Punct	_	3	punct	_	start_char=1231|end_char=1232
+
+# text = Se on elämän riemua, elämän kukkaa, houkuttelevaa, mukaansa vievää virranjuoksua.
+# sent_id = 14
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	nsubj:cop	_	start_char=1233|end_char=1235
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	start_char=1236|end_char=1238
+3	elämän	elämä	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	start_char=1239|end_char=1245
+4	riemua	riemu	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No|start_char=1246|end_char=1252
+5	,	,	PUNCT	Punct	_	7	punct	_	start_char=1252|end_char=1253
+6	elämän	elämä	NOUN	N	Case=Gen|Number=Sing	7	nmod:poss	_	start_char=1254|end_char=1260
+7	kukkaa	kukka	NOUN	N	Case=Par|Number=Sing	4	conj	_	SpaceAfter=No|start_char=1261|end_char=1267
+8	,	,	PUNCT	Punct	_	13	punct	_	start_char=1267|end_char=1268
+9	houkuttelevaa	houkutteleva	ADJ	A	Case=Par|Degree=Pos|Number=Sing	13	amod	_	SpaceAfter=No|start_char=1269|end_char=1282
+10	,	,	PUNCT	Punct	_	13	punct	_	SpacesAfter=\r\n|start_char=1282|end_char=1283
+11	mukaansa	mukaan	ADV	Adv	Person[psor]=3	12	advmod	_	start_char=1285|end_char=1293
+12	vievää	viedä	VERB	V	Case=Par|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	13	acl	_	start_char=1294|end_char=1300
+13	virranjuoksua	virran#juoksu	NOUN	N	Case=Par|Derivation=U|Number=Sing	4	conj	_	SpaceAfter=No|start_char=1301|end_char=1314
+14	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\r\n\r\n|start_char=1314|end_char=1315
+
+# text = Sillan sivukäytävillä kulkee suunnat vastakkain.
+# sent_id = 15
+1	Sillan	silta	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	start_char=1319|end_char=1325
+2	sivukäytävillä	sivu#käytävä	NOUN	N	Case=Ade|Number=Plur	3	obl	_	start_char=1326|end_char=1340
+3	kulkee	kulkea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=1341|end_char=1347
+4	suunnat	suunta	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	start_char=1348|end_char=1355
+5	vastakkain	vastakkain	ADV	Adv	_	3	advmod	_	SpaceAfter=No|start_char=1356|end_char=1366
+6	.	.	PUNCT	Punct	_	3	punct	_	start_char=1366|end_char=1367
+
+# text = Jos mielit minne mennä, älä käänny samalla puolella, vaihda latua, seuraa virran mukana.
+# sent_id = 16
+1	Jos	jos	SCONJ	C	_	2	mark	_	start_char=1368|end_char=1371
+2	mielit	mieliä	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	7	advcl	_	start_char=1372|end_char=1378
+3	minne	minne	ADV	Adv	_	4	advmod	_	SpacesAfter=\r\n|start_char=1379|end_char=1384
+4	mennä	mennä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	SpaceAfter=No|start_char=1386|end_char=1391
+5	,	,	PUNCT	Punct	_	2	punct	_	start_char=1391|end_char=1392
+6	älä	ei	AUX	V	Mood=Imp|Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	start_char=1393|end_char=1396
+7	käänny	kääntyä	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	start_char=1397|end_char=1403
+8	samalla	sama	PRON	Pron	Case=Ade|Number=Sing|PronType=Ind	9	det	_	start_char=1404|end_char=1411
+9	puolella	puoli	NOUN	N	Case=Ade|Number=Sing	7	obl	_	SpaceAfter=No|start_char=1412|end_char=1420
+10	,	,	PUNCT	Punct	_	11	punct	_	start_char=1420|end_char=1421
+11	vaihda	vaihda	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	7	conj	_	start_char=1422|end_char=1428
+12	latua	latu	NOUN	N	Case=Par|Number=Sing	11	obj	_	SpaceAfter=No|start_char=1429|end_char=1434
+13	,	,	PUNCT	Punct	_	14	punct	_	start_char=1434|end_char=1435
+14	seuraa	seurata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	conj	_	start_char=1436|end_char=1442
+15	virran	virta	NOUN	N	Case=Gen|Number=Sing	14	obl	_	SpacesAfter=\r\n|start_char=1443|end_char=1449
+16	mukana	mukana	ADP	Adp	AdpType=Post	15	case	_	SpaceAfter=No|start_char=1451|end_char=1457
+17	.	.	PUNCT	Punct	_	7	punct	_	start_char=1457|end_char=1458
+
+# text = Sinä astut sivukäytävällä omilla jaloillasi, pysyt pystyssä omin voimin, et voi jäädä seisomaan joutumatta joukon tielle, et voi käydä vastavirtaa tulematta tölmityksi.
+# sent_id = 17
+1	Sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	2	nsubj	_	start_char=1459|end_char=1463
+2	astut	astua	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=1464|end_char=1469
+3	sivukäytävällä	sivu#käytävä	NOUN	N	Case=Ade|Number=Sing	2	obl	_	start_char=1470|end_char=1484
+4	omilla	oma	ADJ	A	Case=Ade|Degree=Pos|Number=Plur	5	amod	_	start_char=1485|end_char=1491
+5	jaloillasi	jalka	NOUN	N	Case=Ade|Number=Plur|Number[psor]=Sing|Person[psor]=1	2	obl	_	SpaceAfter=No|start_char=1492|end_char=1502
+6	,	,	PUNCT	Punct	_	7	punct	_	start_char=1502|end_char=1503
+7	pysyt	pysyä	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	start_char=1504|end_char=1509
+8	pystyssä	pystyssä	ADV	Adv	_	7	advmod	_	SpacesAfter=\r\n|start_char=1510|end_char=1518
+9	omin	oma	ADJ	A	Case=Ins|Degree=Pos|Number=Plur	10	amod	_	start_char=1520|end_char=1524
+10	voimin	voima	NOUN	N	Case=Ins|Number=Plur	7	obl	_	SpaceAfter=No|start_char=1525|end_char=1531
+11	,	,	PUNCT	Punct	_	14	punct	_	start_char=1531|end_char=1532
+12	et	ei	AUX	V	Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	14	aux	_	start_char=1533|end_char=1535
+13	voi	voida	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	14	aux	_	start_char=1536|end_char=1539
+14	jäädä	jäädä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	conj	_	start_char=1540|end_char=1545
+15	seisomaan	seisoa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	14	xcomp	_	start_char=1546|end_char=1555
+16	joutumatta	joutua	VERB	V	Case=Abe|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	15	advcl	_	start_char=1556|end_char=1566
+17	joukon	joukko	NOUN	N	Case=Gen|Number=Sing	16	obj	_	start_char=1567|end_char=1573
+18	tielle	tie	NOUN	N	Case=All|Number=Sing	16	obl	_	SpaceAfter=No|start_char=1574|end_char=1580
+19	,	,	PUNCT	Punct	_	22	punct	_	start_char=1580|end_char=1581
+20	et	ei	AUX	V	Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	22	aux	_	start_char=1582|end_char=1584
+21	voi	voida	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	22	aux	_	SpacesAfter=\r\n|start_char=1585|end_char=1588
+22	käydä	käydä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	14	conj	_	start_char=1590|end_char=1595
+23	vastavirtaa	vasta#virta	NOUN	N	Case=Par|Number=Sing	24	nsubj	_	start_char=1596|end_char=1607
+24	tulematta	tulla	VERB	V	Case=Abe|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	22	xcomp:ds	_	start_char=1608|end_char=1617
+25	tölmityksi	tölmitys	NOUN	N	Case=Tra|Number=Sing	24	obl	_	SpaceAfter=No|start_char=1618|end_char=1628
+26	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\r\n\r\n|start_char=1628|end_char=1629
+
+# text = Saat hiljentää taikka kiirehtää askeleitasi voimiesi mukaan ja katsella valtavuota sillan keskiväylässä.
+# sent_id = 18
+1	Saat	saada	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=1633|end_char=1637
+2	hiljentää	hiljentää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	1	xcomp	_	start_char=1638|end_char=1647
+3	taikka	taikka	CCONJ	C	_	4	cc	_	start_char=1648|end_char=1654
+4	kiirehtää	kiirehtää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	conj	_	start_char=1655|end_char=1664
+5	askeleitasi	askel	NOUN	N	Case=All|Number=Plur|Number[psor]=Sing|Person[psor]=2	4	obj	_	start_char=1665|end_char=1676
+6	voimiesi	voima	NOUN	N	Case=Gen|Number=Plur|Number[psor]=Sing|Person[psor]=2	4	obl	_	start_char=1677|end_char=1685
+7	mukaan	mukaan	ADP	Adp	AdpType=Post	6	case	_	start_char=1686|end_char=1692
+8	ja	ja	CCONJ	C	_	9	cc	_	SpacesAfter=\r\n|start_char=1693|end_char=1695
+9	katsella	katsella	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	conj	_	start_char=1697|end_char=1705
+10	valtavuota	valta#vuosi	NOUN	N	Case=Par|Number=Sing	9	obj	_	start_char=1706|end_char=1716
+11	sillan	silta	NOUN	N	Case=Gen|Number=Sing	12	nmod:poss	_	start_char=1717|end_char=1723
+12	keskiväylässä	keski#väylä	NOUN	N	Case=Ine|Number=Sing	9	obl	_	SpaceAfter=No|start_char=1724|end_char=1737
+13	.	.	PUNCT	Punct	_	1	punct	_	start_char=1737|end_char=1738
+
+# text = Jos onni sinua auttaa ja ystäväsi kutsuu vaunuihinsa, voit rohkealla hyppäyksellä saavuttaa onnesi ja valtaväylässä ajaa huristaa sivutse jalankulkijajoukon.
+# sent_id = 19
+1	Jos	jos	SCONJ	C	_	4	mark	_	start_char=1739|end_char=1742
+2	onni	onni	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	start_char=1743|end_char=1747
+3	sinua	sinä	PRON	Pron	Case=Par|Number=Sing|Person=2|PronType=Prs	4	obj	_	start_char=1748|end_char=1753
+4	auttaa	auttaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	advcl	_	start_char=1754|end_char=1760
+5	ja	ja	CCONJ	C	_	7	cc	_	SpacesAfter=\r\n|start_char=1761|end_char=1763
+6	ystäväsi	ystävä	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=2	7	nsubj	_	start_char=1765|end_char=1773
+7	kutsuu	kutsua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	_	start_char=1774|end_char=1780
+8	vaunuihinsa	vaunu	NOUN	N	Case=Ill|Number=Plur|Person[psor]=3	7	obl	_	SpaceAfter=No|start_char=1781|end_char=1792
+9	,	,	PUNCT	Punct	_	4	punct	_	start_char=1792|end_char=1793
+10	voit	voida	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	13	aux	_	start_char=1794|end_char=1798
+11	rohkealla	rohkea	ADJ	A	Case=Ade|Degree=Pos|Number=Sing	12	amod	_	start_char=1799|end_char=1808
+12	hyppäyksellä	hyppäys	NOUN	N	Case=Ade|Number=Sing	13	obl	_	start_char=1809|end_char=1821
+13	saavuttaa	saavuttaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpacesAfter=\r\n|start_char=1822|end_char=1831
+14	onnesi	onni	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=2	13	obj	_	start_char=1833|end_char=1839
+15	ja	ja	CCONJ	C	_	17	cc	_	start_char=1840|end_char=1842
+16	valtaväylässä	valta#väylä	NOUN	N	Case=Ine|Number=Sing	17	obl	_	start_char=1843|end_char=1856
+17	ajaa	ajaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	13	conj	_	start_char=1857|end_char=1861
+18	huristaa	huristaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	17	xcomp	_	start_char=1862|end_char=1870
+19	sivutse	sivutse	ADV	Adv	_	18	advmod	_	start_char=1871|end_char=1878
+20	jalankulkijajoukon	jalan#kulkija#jouko	NOUN	N	Case=Gen|Number=Sing	18	obj	_	SpaceAfter=No|start_char=1879|end_char=1897
+21	.	.	PUNCT	Punct	_	13	punct	_	SpacesAfter=\r\n\r\n|start_char=1897|end_char=1898
+
+# text = Taikka jos rohkenet juosta kiitävien hevosten editse, jos hermosi kestävät autojen rämistävää pärrytystä, jos luusi ovat kyllin lujat niiden alle jäädäksesi ja jalkasi kyllin nopsat saavuttamaan raitiovaunun vauhdissaan ja hyppäämään sen portaalle, voit sen täyteen sullotulla penkillä jouduttaa matkaasi eteenpäin rientäessäsi.
+# sent_id = 20
+1	Taikka	taikka	CCONJ	C	_	41	cc	_	start_char=1902|end_char=1908
+2	jos	jos	SCONJ	C	_	3	mark	_	start_char=1909|end_char=1912
+3	rohkenet	roheta	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	41	advcl	_	start_char=1913|end_char=1921
+4	juosta	juosta	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	start_char=1922|end_char=1928
+5	kiitävien	kiitävä	ADJ	A	Case=Gen|Degree=Pos|Number=Plur	6	amod	_	start_char=1929|end_char=1938
+6	hevosten	hevonen	NOUN	N	Case=Gen|Number=Plur	4	obl	_	start_char=1939|end_char=1947
+7	editse	editse	ADP	Adp	AdpType=Post	6	case	_	SpaceAfter=No|start_char=1948|end_char=1954
+8	,	,	PUNCT	Punct	_	11	punct	_	start_char=1954|end_char=1955
+9	jos	jos	SCONJ	C	_	11	mark	_	start_char=1956|end_char=1959
+10	hermosi	hermo	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=2	11	nsubj	_	SpacesAfter=\r\n|start_char=1960|end_char=1967
+11	kestävät	kestävä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	advcl	_	start_char=1969|end_char=1977
+12	autojen	auto	NOUN	N	Case=Gen|Number=Plur	14	nmod:poss	_	start_char=1978|end_char=1985
+13	rämistävää	rämistävä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	14	amod	_	start_char=1986|end_char=1996
+14	pärrytystä	pärrytys	NOUN	N	Case=Par|Number=Sing	11	obj	_	SpaceAfter=No|start_char=1997|end_char=2007
+15	,	,	PUNCT	Punct	_	20	punct	_	start_char=2007|end_char=2008
+16	jos	jos	SCONJ	C	_	20	mark	_	start_char=2009|end_char=2012
+17	luusi	luusi	NOUN	N	Case=Nom|Number=Plur	20	nsubj:cop	_	start_char=2013|end_char=2018
+18	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	20	cop	_	start_char=2019|end_char=2023
+19	kyllin	kyllin	ADV	Adv	_	20	advmod	_	SpacesAfter=\r\n|start_char=2024|end_char=2030
+20	lujat	luja	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	11	advcl	_	start_char=2032|end_char=2037
+21	niiden	se	PRON	Pron	Case=Gen|Number=Plur|PronType=Dem	20	obl	_	start_char=2038|end_char=2044
+22	alle	alle	ADP	Adp	AdpType=Post	21	case	_	start_char=2045|end_char=2049
+23	jäädäksesi	jäädä	VERB	V	Case=Tra|InfForm=1|Number=Sing|Number[psor]=Sing|Person[psor]=1|VerbForm=Inf|Voice=Act	20	advcl	_	start_char=2050|end_char=2060
+24	ja	ja	CCONJ	C	_	25	cc	_	start_char=2061|end_char=2063
+25	jalkasi	jalka	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=2	28	nsubj	_	start_char=2064|end_char=2071
+26	kyllin	kyllin	ADV	Adv	_	28	advmod	_	start_char=2072|end_char=2078
+27	nopsat	nopsa	NOUN	N	Case=Nom|Number=Plur	28	nsubj	_	start_char=2079|end_char=2085
+28	saavuttamaan	saavuttaa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	23	conj	_	SpacesAfter=\r\n|start_char=2086|end_char=2098
+29	raitiovaunun	raitio#vaunu	NOUN	N	Case=Gen|Number=Sing	28	obj	_	start_char=2100|end_char=2112
+30	vauhdissaan	vauhti	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	28	obl	_	start_char=2113|end_char=2124
+31	ja	ja	CCONJ	C	_	32	cc	_	start_char=2125|end_char=2127
+32	hyppäämään	hypätä	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	28	conj	_	start_char=2128|end_char=2138
+33	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	32	obj	_	start_char=2139|end_char=2142
+34	portaalle	portaat	NOUN	N	Case=All|Number=Sing	32	obl	_	SpaceAfter=No|start_char=2143|end_char=2152
+35	,	,	PUNCT	Punct	_	20	punct	_	start_char=2152|end_char=2153
+36	voit	voida	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	41	aux	_	start_char=2154|end_char=2158
+37	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	41	obj	_	SpacesAfter=\r\n|start_char=2159|end_char=2162
+38	täyteen	täyteen	ADV	Adv	_	41	advmod	_	start_char=2164|end_char=2171
+39	sullotulla	sullottu	ADJ	A	Case=Ade|Degree=Pos|Number=Sing	40	amod	_	start_char=2172|end_char=2182
+40	penkillä	penkki	NOUN	N	Case=Ade|Number=Sing	41	obl	_	start_char=2183|end_char=2191
+41	jouduttaa	jouduttaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	start_char=2192|end_char=2201
+42	matkaasi	matka	NOUN	N	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=2	41	obj	_	start_char=2202|end_char=2210
+43	eteenpäin	eteenpäin	ADV	Adv	_	44	advmod	_	start_char=2211|end_char=2220
+44	rientäessäsi	rientää	VERB	V	Case=Ine|InfForm=2|Number=Sing|Number[psor]=Sing|Person[psor]=1|VerbForm=Inf|Voice=Act	41	advcl	_	SpaceAfter=No|start_char=2221|end_char=2233
+45	.	.	PUNCT	Punct	_	41	punct	_	SpacesAfter=\r\n\r\n|start_char=2233|end_char=2234
+
+# text = Mutta jos väsymys ja epätoivo sinut valtaa keskellä ihmisvirtaa, voit luuhistua maahan, heittäytyä alentuvana armoa anomaan, voit tulla poljetuksi, voit syöksyä valtavuon vaunujen alle murskattavaksi, mutta sinä et saa vaatia liikettä itsesi vuoksi pysähtymään, et valtaväylässä etkä sivukäytävällä.
+# sent_id = 21
+1	Mutta	mutta	CCONJ	C	_	12	cc	_	start_char=2238|end_char=2243
+2	jos	jos	SCONJ	C	_	7	mark	_	start_char=2244|end_char=2247
+3	väsymys	väsymys	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	start_char=2248|end_char=2255
+4	ja	ja	CCONJ	C	_	5	cc	_	start_char=2256|end_char=2258
+5	epätoivo	epä#toivo	NOUN	N	Case=Nom|Number=Sing	3	conj	_	start_char=2259|end_char=2267
+6	sinut	sinä	PRON	Pron	Case=Acc|Number=Sing|Person=2|PronType=Prs	3	conj	_	start_char=2268|end_char=2273
+7	valtaa	vallata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	advcl	_	start_char=2274|end_char=2280
+8	keskellä	keskellä	ADP	Adp	AdpType=Prep	9	case	_	start_char=2281|end_char=2289
+9	ihmisvirtaa	ihmis#virta	NOUN	N	Case=Par|Number=Sing	7	obl	_	SpaceAfter=No|start_char=2290|end_char=2301
+10	,	,	PUNCT	Punct	_	7	punct	_	start_char=2301|end_char=2302
+11	voit	voida	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	12	aux	_	SpacesAfter=\r\n|start_char=2303|end_char=2307
+12	luuhistua	luuhistua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	start_char=2309|end_char=2318
+13	maahan	maa	NOUN	N	Case=Ill|Number=Sing	12	obl	_	SpaceAfter=No|start_char=2319|end_char=2325
+14	,	,	PUNCT	Punct	_	15	punct	_	start_char=2325|end_char=2326
+15	heittäytyä	heittäytyä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	12	conj	_	start_char=2327|end_char=2337
+16	alentuvana	alentuva	ADJ	A	Case=Ess|Degree=Pos|Number=Sing	15	obl	_	start_char=2338|end_char=2348
+17	armoa	armo	NOUN	N	Case=Par|Number=Sing	18	obj	_	start_char=2349|end_char=2354
+18	anomaan	anoa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	15	xcomp:ds	_	SpaceAfter=No|start_char=2355|end_char=2362
+19	,	,	PUNCT	Punct	_	21	punct	_	start_char=2362|end_char=2363
+20	voit	voida	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	21	aux	_	start_char=2364|end_char=2368
+21	tulla	tulla	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	12	conj	_	SpacesAfter=\r\n|start_char=2369|end_char=2374
+22	poljetuksi	poljeta	VERB	V	Case=Tra|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	21	xcomp	_	SpaceAfter=No|start_char=2376|end_char=2386
+23	,	,	PUNCT	Punct	_	25	punct	_	start_char=2386|end_char=2387
+24	voit	voida	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	25	aux	_	start_char=2388|end_char=2392
+25	syöksyä	syöksy	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	12	conj	_	start_char=2393|end_char=2400
+26	valtavuon	valta#vuo	NOUN	N	Case=Gen|Number=Sing	25	obj	_	start_char=2401|end_char=2410
+27	vaunujen	vaunu	NOUN	N	Case=Gen|Number=Plur	25	obl	_	start_char=2411|end_char=2419
+28	alle	alle	ADP	Adp	AdpType=Post	27	case	_	start_char=2420|end_char=2424
+29	murskattavaksi	murskattava	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	25	xcomp	_	SpaceAfter=No|start_char=2425|end_char=2439
+30	,	,	PUNCT	Punct	_	34	punct	_	SpacesAfter=\r\n|start_char=2439|end_char=2440
+31	mutta	mutta	CCONJ	C	_	34	cc	_	start_char=2442|end_char=2447
+32	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	34	nsubj	_	start_char=2448|end_char=2452
+33	et	ei	AUX	V	Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	34	aux	_	start_char=2453|end_char=2455
+34	saa	saada	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	25	conj	_	start_char=2456|end_char=2459
+35	vaatia	vaatia	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	34	xcomp	_	start_char=2460|end_char=2466
+36	liikettä	liike	NOUN	N	Case=Par|Number=Sing	35	obj	_	start_char=2467|end_char=2475
+37	itsesi	itse	PRON	Pron	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1|Reflex=Yes	39	obl	_	start_char=2476|end_char=2482
+38	vuoksi	vuoksi	ADP	Adp	AdpType=Post	37	case	_	start_char=2483|end_char=2489
+39	pysähtymään	pysähtyä	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	35	xcomp	_	SpaceAfter=No|start_char=2490|end_char=2501
+40	,	,	PUNCT	Punct	_	41	punct	_	start_char=2501|end_char=2502
+41	et	ei	VERB	V	Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	34	conj	_	SpacesAfter=\r\n|start_char=2503|end_char=2505
+42	valtaväylässä	valta#väylä	NOUN	N	Case=Ine|Number=Sing	41	obl	_	start_char=2507|end_char=2520
+43	etkä	ei	AUX	V	Clitic=Ka|Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	44	aux	_	start_char=2521|end_char=2525
+44	sivukäytävällä	sivu#käytävä	NOUN	N	Case=Ade|Number=Sing	42	conj	_	SpaceAfter=No|start_char=2526|end_char=2540
+45	.	.	PUNCT	Punct	_	12	punct	_	start_char=2540|end_char=2541
+
+# text = Liike seuraa omia kovia lakejaan.
+# sent_id = 22
+1	Liike	liike	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	start_char=2542|end_char=2547
+2	seuraa	seurata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=2548|end_char=2554
+3	omia	oma	ADJ	A	Case=Par|Degree=Pos|Number=Plur	5	amod	_	start_char=2555|end_char=2559
+4	kovia	kova	ADJ	A	Case=Par|Degree=Pos|Number=Plur	5	amod	_	start_char=2560|end_char=2565
+5	lakejaan	laki	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	2	obj	_	SpaceAfter=No|start_char=2566|end_char=2574
+6	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\r\n|start_char=2574|end_char=2575
+
+# text = Kulje arki-illoin pitkin pitkää siltaa.
+# sent_id = 23
+1	Kulje	kulkea	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	start_char=2577|end_char=2582
+2	arki-illoin	arki-illoin	ADV	Adv	_	1	advmod	_	start_char=2583|end_char=2594
+3	pitkin	pitkin	ADP	Adp	AdpType=Prep	5	case	_	start_char=2595|end_char=2601
+4	pitkää	pitkä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	5	amod	_	start_char=2602|end_char=2608
+5	siltaa	silta	NOUN	N	Case=Par|Number=Sing	1	obl	_	SpaceAfter=No|start_char=2609|end_char=2615
+6	.	.	PUNCT	Punct	_	1	punct	_	start_char=2615|end_char=2616
+
+# text = Vastaasi vaeltaa taaskin ihmisvirta.
+# sent_id = 24
+1	Vastaasi	vasta#asi	NOUN	N	Case=Tra|Number=Sing|Number[psor]=Sing|Person[psor]=2	2	obl	_	start_char=2617|end_char=2625
+2	vaeltaa	vaeltaa	VERB	V	InfForm=1|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=2626|end_char=2633
+3	taaskin	taaskin	ADV	Adv	Clitic=Kin	2	advmod	_	SpacesAfter=\r\n|start_char=2634|end_char=2641
+4	ihmisvirta	ihmis#virta	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	SpaceAfter=No|start_char=2643|end_char=2653
+5	.	.	PUNCT	Punct	_	2	punct	_	start_char=2653|end_char=2654
+
+# text = Siinä on oikein valtava tulva.
+# sent_id = 25
+1	Siinä	se	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	0	root	_	start_char=2655|end_char=2660
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	start_char=2661|end_char=2663
+3	oikein	oikein	ADV	Adv	_	4	advmod	_	start_char=2664|end_char=2670
+4	valtava	valtava	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	5	amod	_	start_char=2671|end_char=2678
+5	tulva	tulva	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	SpaceAfter=No|start_char=2679|end_char=2684
+6	.	.	PUNCT	Punct	_	1	punct	_	start_char=2684|end_char=2685
+
+# text = Päätäsi pyörryttää ja silmissäsi vilisee.
+# sent_id = 26
+1	Päätäsi	pää	PRON	Pron	Case=Par|Number=Sing|PronType=Prs	2	obj	_	start_char=2686|end_char=2693
+2	pyörryttää	pyörryttää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	start_char=2694|end_char=2704
+3	ja	ja	CCONJ	C	_	5	cc	_	SpacesAfter=\r\n|start_char=2705|end_char=2707
+4	silmissäsi	silmä	NOUN	N	Case=Ade|Number=Sing|Number[psor]=Sing|Person[psor]=2	5	obl	_	start_char=2709|end_char=2719
+5	vilisee	vilistä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No|start_char=2720|end_char=2727
+6	.	.	PUNCT	Punct	_	2	punct	_	start_char=2727|end_char=2728
+
+# text = Olet joutunut vastavirtaan.
+# sent_id = 27
+1	Olet	olla	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	2	aux	_	start_char=2729|end_char=2733
+2	joutunut	joutua	VERB	V	Case=Nom|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	start_char=2734|end_char=2742
+3	vastavirtaan	vasta#virta	NOUN	N	Case=Ill|Number=Sing	2	obl	_	SpaceAfter=No|start_char=2743|end_char=2755
+4	.	.	PUNCT	Punct	_	2	punct	_	start_char=2755|end_char=2756
+
+# text = Varusta siis voimasi, siristä itsesi, ponnahtele eteenpäin kuin lohi koskessa.
+# sent_id = 28
+1	Varusta	varustaa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	start_char=2757|end_char=2764
+2	siis	siis	ADV	Adv	_	1	advmod	_	start_char=2765|end_char=2769
+3	voimasi	voima	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=2	1	obj	_	SpaceAfter=No|start_char=2770|end_char=2777
+4	,	,	PUNCT	Punct	_	5	punct	_	SpacesAfter=\r\n|start_char=2777|end_char=2778
+5	siristä	siristä	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	1	conj	_	start_char=2780|end_char=2787
+6	itsesi	itse	PRON	Pron	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1|Reflex=Yes	5	obj	_	SpaceAfter=No|start_char=2788|end_char=2794
+7	,	,	PUNCT	Punct	_	8	punct	_	start_char=2794|end_char=2795
+8	ponnahtele	ponnahdella	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	1	conj	_	start_char=2796|end_char=2806
+9	eteenpäin	eteenpäin	ADV	Adv	_	8	advmod	_	start_char=2807|end_char=2816
+10	kuin	kuin	SCONJ	C	_	11	mark	_	start_char=2817|end_char=2821
+11	lohi	lohi	NOUN	N	Case=Nom|Number=Sing	8	advcl	_	start_char=2822|end_char=2826
+12	koskessa	koski	NOUN	N	Case=Ine|Number=Sing	11	nmod	_	SpaceAfter=No|start_char=2827|end_char=2835
+13	.	.	PUNCT	Punct	_	1	punct	_	start_char=2835|end_char=2836
+
+# text = Silloin näet vastaantulevat kasvoista kasvoihin, tunnet oman avuttomuutesi ja manaat onnettomuutta, joka heitti väärälle ladulle.
+# sent_id = 29
+1	Silloin	silloin	ADV	Adv	_	2	advmod	_	SpacesAfter=\r\n|start_char=2837|end_char=2844
+2	näet	näet	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=2846|end_char=2850
+3	vastaantulevat	vastaantuleva	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	2	obj	_	start_char=2851|end_char=2865
+4	kasvoista	kasvot	NOUN	N	Case=Ela|Number=Plur	2	obl	_	start_char=2866|end_char=2875
+5	kasvoihin	kasvot	NOUN	N	Case=Ill|Number=Plur	2	obl	_	SpaceAfter=No|start_char=2876|end_char=2885
+6	,	,	PUNCT	Punct	_	7	punct	_	start_char=2885|end_char=2886
+7	tunnet	tuntea	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	start_char=2887|end_char=2893
+8	oman	oma	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	9	amod	_	start_char=2894|end_char=2898
+9	avuttomuutesi	avuttomuus	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1	7	obj	_	SpacesAfter=\r\n|start_char=2899|end_char=2912
+10	ja	ja	CCONJ	C	_	11	cc	_	start_char=2914|end_char=2916
+11	manaat	manata	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	start_char=2917|end_char=2923
+12	onnettomuutta	onnettomuus	NOUN	N	Case=Par|Derivation=Vs|Number=Sing	11	obj	_	SpaceAfter=No|start_char=2924|end_char=2937
+13	,	,	PUNCT	Punct	_	15	punct	_	start_char=2937|end_char=2938
+14	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	15	nsubj	_	start_char=2939|end_char=2943
+15	heitti	heittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	12	acl:relcl	_	start_char=2944|end_char=2950
+16	väärälle	väärä	ADJ	A	Case=All|Degree=Pos|Number=Sing	17	amod	_	start_char=2951|end_char=2959
+17	ladulle	ladu	NOUN	N	Case=All|Number=Sing	15	obl	_	SpaceAfter=No|start_char=2960|end_char=2967
+18	.	.	PUNCT	Punct	_	2	punct	_	start_char=2967|end_char=2968
+
+# text = Mutta jos tyydyt osaasi ja katselet elämääsi tyynesti, voit tutkia asemaasi ja vastaantulevia.
+# sent_id = 30
+1	Mutta	mutta	CCONJ	C	_	11	cc	_	start_char=2969|end_char=2974
+2	jos	jos	SCONJ	C	_	3	mark	_	SpacesAfter=\r\n|start_char=2975|end_char=2978
+3	tyydyt	tyytyä	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	11	advcl	_	start_char=2980|end_char=2986
+4	osaasi	osaasi	ADV	Adv	_	3	advmod	_	start_char=2987|end_char=2993
+5	ja	ja	CCONJ	C	_	6	cc	_	start_char=2994|end_char=2996
+6	katselet	katsella	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	start_char=2997|end_char=3005
+7	elämääsi	elämä	NOUN	N	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=2	6	obj	_	start_char=3006|end_char=3014
+8	tyynesti	tyynesti	ADV	Adv	Derivation=Sti	6	advmod	_	SpaceAfter=No|start_char=3015|end_char=3023
+9	,	,	PUNCT	Punct	_	3	punct	_	start_char=3023|end_char=3024
+10	voit	voida	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	11	aux	_	start_char=3025|end_char=3029
+11	tutkia	tutkia	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	start_char=3030|end_char=3036
+12	asemaasi	asema	NOUN	N	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=1	11	obj	_	start_char=3037|end_char=3045
+13	ja	ja	CCONJ	C	_	14	cc	_	SpacesAfter=\r\n|start_char=3046|end_char=3048
+14	vastaantulevia	vastaantuleva	ADJ	A	Case=Par|Degree=Pos|Number=Plur	12	conj	_	SpaceAfter=No|start_char=3050|end_char=3064
+15	.	.	PUNCT	Punct	_	11	punct	_	SpacesAfter=\r\n\r\n|start_char=3064|end_char=3065
+
+# text = Siinä on miestä ja naista, lasta, neitoa ja nuorukaista, kullakin työnsä leima kasvoissa ja vaatteissansa.
+# sent_id = 31
+1	Siinä	se	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	0	root	_	start_char=3069|end_char=3074
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	start_char=3075|end_char=3077
+3	miestä	mies	NOUN	N	Case=Par|Number=Sing	1	nsubj:cop	_	start_char=3078|end_char=3084
+4	ja	ja	CCONJ	C	_	5	cc	_	start_char=3085|end_char=3087
+5	naista	nainen	NOUN	N	Case=Par|Number=Sing	3	conj	_	SpaceAfter=No|start_char=3088|end_char=3094
+6	,	,	PUNCT	Punct	_	7	punct	_	start_char=3094|end_char=3095
+7	lasta	lapsi	NOUN	N	Case=Par|Number=Sing	3	conj	_	SpaceAfter=No|start_char=3096|end_char=3101
+8	,	,	PUNCT	Punct	_	9	punct	_	start_char=3101|end_char=3102
+9	neitoa	neito	NOUN	N	Case=Par|Number=Sing	3	conj	_	start_char=3103|end_char=3109
+10	ja	ja	CCONJ	C	_	11	cc	_	start_char=3110|end_char=3112
+11	nuorukaista	nuorukainen	NOUN	N	Case=Par|Number=Sing	3	conj	_	SpaceAfter=No|start_char=3113|end_char=3124
+12	,	,	PUNCT	Punct	_	15	punct	_	start_char=3124|end_char=3125
+13	kullakin	kukin	PRON	Pron	Case=Ade|Number=Sing|PronType=Ind	15	det	_	SpacesAfter=\r\n|start_char=3126|end_char=3134
+14	työnsä	työ	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	15	nmod:poss	_	start_char=3136|end_char=3142
+15	leima	leima	NOUN	N	Case=Nom|Number=Sing	3	conj	_	start_char=3143|end_char=3148
+16	kasvoissa	kasvot	NOUN	N	Case=Ine|Number=Plur	15	nmod	_	start_char=3149|end_char=3158
+17	ja	ja	CCONJ	C	_	18	cc	_	start_char=3159|end_char=3161
+18	vaatteissansa	vaatti	NOUN	N	Case=Ine|Number=Plur|Person[psor]=3	16	conj	_	SpaceAfter=No|start_char=3162|end_char=3175
+19	.	.	PUNCT	Punct	_	1	punct	_	start_char=3175|end_char=3176
+
+# text = Nuoren sepän mustuneet kasvot ja säihkyvät silmät välähtävät edessäsi -- virtaan katoovat.
+# sent_id = 32
+1	Nuoren	nuori	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	2	amod	_	start_char=3177|end_char=3183
+2	sepän	seppä	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	start_char=3184|end_char=3189
+3	mustuneet	mustua	VERB	V	Case=Nom|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	4	acl	_	SpacesAfter=\r\n|start_char=3190|end_char=3199
+4	kasvot	kasvot	NOUN	N	Case=Nom|Number=Plur	8	nsubj	_	start_char=3201|end_char=3207
+5	ja	ja	CCONJ	C	_	7	cc	_	start_char=3208|end_char=3210
+6	säihkyvät	säihkyä	VERB	V	Case=Nom|Number=Plur|PartForm=Pres|VerbForm=Part|Voice=Act	7	acl	_	start_char=3211|end_char=3220
+7	silmät	silmä	NOUN	N	Case=Nom|Number=Plur	4	conj	_	start_char=3221|end_char=3227
+8	välähtävät	välähtää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=3228|end_char=3238
+9	edessäsi	edessä	ADV	Adv	Number[psor]=Sing|Person[psor]=2	8	advmod	_	start_char=3239|end_char=3247
+10	--	--	PUNCT	Punct	_	12	punct	_	start_char=3248|end_char=3250
+11	virtaan	virta	NOUN	N	Case=Ill|Number=Sing	12	obl	_	start_char=3251|end_char=3258
+12	katoovat	kadota	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	parataxis	_	SpaceAfter=No|start_char=3259|end_char=3267
+13	.	.	PUNCT	Punct	_	8	punct	_	SpacesAfter=\r\n|start_char=3267|end_char=3268
+
+# text = Hän kulkee kiihkeänä kuin kapinoiva, rauhaton ajanhenki häntä vainoisi.
+# sent_id = 33
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	start_char=3270|end_char=3273
+2	kulkee	kulkea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=3274|end_char=3280
+3	kiihkeänä	kiihkeä	ADJ	A	Case=Ess|Degree=Pos|Number=Sing	2	xcomp	_	start_char=3281|end_char=3290
+4	kuin	kuin	SCONJ	C	_	5	mark	_	start_char=3291|end_char=3295
+5	kapinoiva	kapinoida	VERB	V	Case=Nom|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	3	advcl	_	SpaceAfter=No|start_char=3296|end_char=3305
+6	,	,	PUNCT	Punct	_	10	punct	_	start_char=3305|end_char=3306
+7	rauhaton	rauhaton	ADJ	A	Case=Nom|Degree=Pos|Derivation=Ton|Number=Sing	8	amod	_	start_char=3307|end_char=3315
+8	ajanhenki	aian#henki	NOUN	N	Case=Nom|Number=Sing	10	nsubj	_	start_char=3316|end_char=3325
+9	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	10	obj	_	SpacesAfter=\r\n|start_char=3326|end_char=3331
+10	vainoisi	vainoa	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No|start_char=3333|end_char=3341
+11	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\r\n\r\n|start_char=3341|end_char=3342
+
+# text = Hitaammin astuu vanha muurari katsoen kauas kuin yhä vieläkin silmäisi korkean muurin laidalta ihmisten kiehuvaan kiireeseen alhaalla kadulla.
+# sent_id = 34
+1	Hitaammin	hitaasti	ADV	Adv	Degree=Cmp|Derivation=Sti	2	advmod	_	start_char=3346|end_char=3355
+2	astuu	astua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=3356|end_char=3361
+3	vanha	vanha	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	amod	_	start_char=3362|end_char=3367
+4	muurari	muurari	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	start_char=3368|end_char=3375
+5	katsoen	katsoa	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	2	advcl	_	start_char=3376|end_char=3383
+6	kauas	kauas	ADV	Adv	_	5	advmod	_	start_char=3384|end_char=3389
+7	kuin	kuin	SCONJ	C	_	10	mark	_	start_char=3390|end_char=3394
+8	yhä	yhä	ADV	Adv	_	9	advmod	_	start_char=3395|end_char=3398
+9	vieläkin	vieläkin	ADV	Adv	Clitic=Kin	10	advmod	_	SpacesAfter=\r\n|start_char=3399|end_char=3407
+10	silmäisi	silmätä	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	6	advcl	_	start_char=3409|end_char=3417
+11	korkean	korkea	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	12	amod	_	start_char=3418|end_char=3425
+12	muurin	muuri	NOUN	N	Case=Gen|Number=Sing	13	nmod:poss	_	start_char=3426|end_char=3432
+13	laidalta	laita	NOUN	N	Case=Abl|Number=Sing	10	obl	_	start_char=3433|end_char=3441
+14	ihmisten	ihminen	NOUN	N	Case=Gen|Number=Plur	16	nmod:poss	_	start_char=3442|end_char=3450
+15	kiehuvaan	kiehuva	ADJ	A	Case=Ill|Degree=Pos|Number=Sing	16	amod	_	start_char=3451|end_char=3460
+16	kiireeseen	kiire	NOUN	N	Case=Ill|Number=Sing	10	obl	_	SpacesAfter=\r\n|start_char=3461|end_char=3471
+17	alhaalla	alhaalla	ADV	Adv	_	10	advmod	_	start_char=3473|end_char=3481
+18	kadulla	katu	NOUN	N	Case=Ade|Number=Sing	17	nmod	_	SpaceAfter=No|start_char=3482|end_char=3489
+19	.	.	PUNCT	Punct	_	2	punct	_	start_char=3489|end_char=3490
+
+# text = Silmien tyynessä kuvastuu tunne kuin arvostaisi hän turhiksi ihmisten tuliset touhut.
+# sent_id = 35
+1	Silmien	silmä	NOUN	N	Case=Gen|Number=Plur	2	nmod:poss	_	start_char=3491|end_char=3498
+2	tyynessä	tyyne	ADJ	A	Case=Ine|Degree=Pos|Number=Sing	3	xcomp	_	start_char=3499|end_char=3507
+3	kuvastuu	kuvastua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=3508|end_char=3516
+4	tunne	tunne	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	start_char=3517|end_char=3522
+5	kuin	kuin	SCONJ	C	_	6	mark	_	start_char=3523|end_char=3527
+6	arvostaisi	arvostaa	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	3	advcl	_	start_char=3528|end_char=3538
+7	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	SpacesAfter=\r\n|start_char=3539|end_char=3542
+8	turhiksi	turha	ADJ	A	Case=Tra|Degree=Pos|Number=Plur	6	xcomp	_	start_char=3544|end_char=3552
+9	ihmisten	ihminen	NOUN	N	Case=Gen|Number=Plur	11	nmod:poss	_	start_char=3553|end_char=3561
+10	tuliset	tulinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Plur	11	amod	_	start_char=3562|end_char=3569
+11	touhut	touhu	NOUN	N	Case=Nom|Number=Plur	6	obj	_	SpaceAfter=No|start_char=3570|end_char=3576
+12	.	.	PUNCT	Punct	_	3	punct	_	start_char=3576|end_char=3577
+
+# text = Hän astuu hitaammin, varmemmin ja pitemmin askelin kuin nuori seppä.
+# sent_id = 36
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	start_char=3578|end_char=3581
+2	astuu	astua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=3582|end_char=3587
+3	hitaammin	hitaasti	ADV	Adv	Degree=Cmp|Derivation=Sti	2	advmod	_	SpaceAfter=No|start_char=3588|end_char=3597
+4	,	,	PUNCT	Punct	_	5	punct	_	start_char=3597|end_char=3598
+5	varmemmin	varmemmin	ADV	Adv	Degree=Cmp|Derivation=Sti	3	conj	_	start_char=3599|end_char=3608
+6	ja	ja	CCONJ	C	_	7	cc	_	SpacesAfter=\r\n|start_char=3609|end_char=3611
+7	pitemmin	pitemmin	ADV	Adv	Degree=Cmp	8	advmod	_	start_char=3613|end_char=3621
+8	askelin	askelin	ADV	Adv	_	3	conj	_	start_char=3622|end_char=3629
+9	kuin	kuin	SCONJ	C	_	11	mark	_	start_char=3630|end_char=3634
+10	nuori	nuori	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	11	amod	_	start_char=3635|end_char=3640
+11	seppä	seppä	NOUN	N	Case=Nom|Number=Sing	8	advcl	_	SpaceAfter=No|start_char=3641|end_char=3646
+12	.	.	PUNCT	Punct	_	2	punct	_	start_char=3646|end_char=3647
+
+# text = Ja hän on itselleen ostanut pienen talon laitakaupungilla, josta pian voi tulla keskikaupunginosa.
+# sent_id = 37
+1	Ja	ja	CCONJ	C	_	5	cc	_	start_char=3648|end_char=3650
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	start_char=3651|end_char=3654
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	start_char=3655|end_char=3657
+4	itselleen	itse	PRON	Pron	Case=All|Number=Sing|Person[psor]=3|Reflex=Yes	5	obl	_	start_char=3658|end_char=3667
+5	ostanut	ostaa	VERB	V	Case=Nom|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	start_char=3668|end_char=3675
+6	pienen	pieni	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	7	amod	_	SpacesAfter=\r\n|start_char=3676|end_char=3682
+7	talon	talo	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	start_char=3684|end_char=3689
+8	laitakaupungilla	laita#kaupunki	NOUN	N	Case=Ade|Number=Sing	5	obl	_	SpaceAfter=No|start_char=3690|end_char=3706
+9	,	,	PUNCT	Punct	_	13	punct	_	start_char=3706|end_char=3707
+10	josta	joka	PRON	Pron	Case=Ela|Number=Sing|PronType=Rel	13	obl	_	start_char=3708|end_char=3713
+11	pian	pian	ADV	Adv	_	13	advmod	_	start_char=3714|end_char=3718
+12	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	aux	_	start_char=3719|end_char=3722
+13	tulla	tulla	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	8	acl:relcl	_	start_char=3723|end_char=3728
+14	keskikaupunginosa	keski#kaupungin#osa	NOUN	N	Case=Nom|Number=Sing	13	nsubj	_	SpaceAfter=No|start_char=3729|end_char=3746
+15	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter=\r\n|start_char=3746|end_char=3747
+
+# text = Hän on kouluttanut lapsensa ja saattanut ne vaunuihin tuohon valtaväylälle ajamaan.
+# sent_id = 38
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	start_char=3749|end_char=3752
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	start_char=3753|end_char=3755
+3	kouluttanut	kouluttaa	VERB	V	Case=Nom|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	start_char=3756|end_char=3767
+4	lapsensa	lapsi	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	3	obj	_	start_char=3768|end_char=3776
+5	ja	ja	CCONJ	C	_	6	cc	_	start_char=3777|end_char=3779
+6	saattanut	saattaa	VERB	V	Case=Nom|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	conj	_	start_char=3780|end_char=3789
+7	ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	6	obj	_	start_char=3790|end_char=3792
+8	vaunuihin	vaunu	NOUN	N	Case=Ill|Number=Plur	6	obl	_	start_char=3793|end_char=3802
+9	tuohon	tuo	PRON	Pron	Case=Ill|Number=Sing|PronType=Dem	10	det	_	SpacesAfter=\r\n|start_char=3803|end_char=3809
+10	valtaväylälle	valta#väylä	NOUN	N	Case=All|Number=Sing	11	obl	_	start_char=3811|end_char=3824
+11	ajamaan	ajaa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	6	xcomp	_	SpaceAfter=No|start_char=3825|end_char=3832
+12	.	.	PUNCT	Punct	_	3	punct	_	start_char=3832|end_char=3833
+
+# text = Hän on itse päässyt rannan tyyneen veteen.
+# sent_id = 39
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	start_char=3834|end_char=3837
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	start_char=3838|end_char=3840
+3	itse	itse	ADV	Adv	_	4	advmod	_	start_char=3841|end_char=3845
+4	päässyt	päästä	VERB	V	Case=Nom|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	start_char=3846|end_char=3853
+5	rannan	ranta	NOUN	N	Case=Gen|Number=Sing	7	nmod:poss	_	start_char=3854|end_char=3860
+6	tyyneen	tyyne	ADJ	A	Case=Ill|Degree=Pos|Number=Sing	7	amod	_	start_char=3861|end_char=3868
+7	veteen	vesi	NOUN	N	Case=Ill|Number=Sing	4	obl	_	SpaceAfter=No|start_char=3869|end_char=3875
+8	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\r\n\r\n|start_char=3875|end_char=3876
+
+# text = Roteva nainen polkee siltaa kuin polkisi vieläkin telineportaita nuokkuvan raskaassa tahdissa.
+# sent_id = 40
+1	Roteva	roteva	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	amod	_	start_char=3880|end_char=3886
+2	nainen	nainen	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	start_char=3887|end_char=3893
+3	polkee	polea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=3894|end_char=3900
+4	siltaa	silta	NOUN	N	Case=Par|Number=Sing	3	obj	_	start_char=3901|end_char=3907
+5	kuin	kuin	SCONJ	C	_	6	mark	_	start_char=3908|end_char=3912
+6	polkisi	polkita	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	advcl	_	start_char=3913|end_char=3920
+7	vieläkin	vieläkin	ADV	Adv	Clitic=Kin	6	advmod	_	start_char=3921|end_char=3929
+8	telineportaita	teli#neportaat	NOUN	N	Case=Par|Number=Plur	6	obj	_	SpacesAfter=\r\n|start_char=3930|end_char=3944
+9	nuokkuvan	nuokkuva	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	10	amod	_	start_char=3946|end_char=3955
+10	raskaassa	raskas	ADJ	A	Case=Ine|Degree=Pos|Number=Sing	11	amod	_	start_char=3956|end_char=3965
+11	tahdissa	tahti	NOUN	N	Case=Ine|Number=Sing	6	obl	_	SpaceAfter=No|start_char=3966|end_char=3974
+12	.	.	PUNCT	Punct	_	3	punct	_	start_char=3974|end_char=3975
+
+# text = Elämä on hänelle tiilitaakka ja sitä hän kantaa arvokkaasti.
+# sent_id = 41
+1	Elämä	elämä	NOUN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	start_char=3976|end_char=3981
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	start_char=3982|end_char=3984
+3	hänelle	hän	PRON	Pron	Case=All|Number=Sing|Person=3|PronType=Prs	4	obl	_	start_char=3985|end_char=3992
+4	tiilitaakka	tiili#taakka	NOUN	N	Case=Nom|Number=Sing	0	root	_	start_char=3993|end_char=4004
+5	ja	ja	CCONJ	C	_	8	cc	_	start_char=4005|end_char=4007
+6	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	8	obj	_	SpacesAfter=\r\n|start_char=4008|end_char=4012
+7	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	start_char=4014|end_char=4017
+8	kantaa	kantaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	_	start_char=4018|end_char=4024
+9	arvokkaasti	arvokkaasti	ADV	Adv	Derivation=Sti	8	advmod	_	SpaceAfter=No|start_char=4025|end_char=4036
+10	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\r\n\r\n|start_char=4036|end_char=4037
+
+# text = Neitonen sipsuttaa vikkelästi muodikkaassa hameessaan.
+# sent_id = 42
+1	Neitonen	neitonen	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	start_char=4041|end_char=4049
+2	sipsuttaa	sipsuttaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=4050|end_char=4059
+3	vikkelästi	vikkelästi	ADV	Adv	Derivation=Sti	2	advmod	_	start_char=4060|end_char=4070
+4	muodikkaassa	muodikas	ADJ	A	Case=Ine|Degree=Pos|Number=Sing	5	amod	_	start_char=4071|end_char=4083
+5	hameessaan	hame	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	2	obl	_	SpaceAfter=No|start_char=4084|end_char=4094
+6	.	.	PUNCT	Punct	_	2	punct	_	start_char=4094|end_char=4095
+
+# text = Hattu heilaa hiuslaitteella ja kasvoilla on ummehtuneen ompeluhuoneen painama harmaus.
+# sent_id = 43
+1	Hattu	hattu	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	start_char=4096|end_char=4101
+2	heilaa	heilata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpacesAfter=\r\n|start_char=4102|end_char=4108
+3	hiuslaitteella	hius#laite	NOUN	N	Case=Ade|Number=Sing	2	obl	_	start_char=4110|end_char=4124
+4	ja	ja	CCONJ	C	_	5	cc	_	start_char=4125|end_char=4127
+5	kasvoilla	kasvot	NOUN	N	Case=Ade|Number=Plur	2	conj	_	start_char=4128|end_char=4137
+6	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	start_char=4138|end_char=4140
+7	ummehtuneen	ummehtua	VERB	V	Case=Gen|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	8	acl	_	start_char=4141|end_char=4152
+8	ompeluhuoneen	ompelu#huone	NOUN	N	Case=Gen|Number=Sing	9	nsubj	_	start_char=4153|end_char=4166
+9	painama	painaa	VERB	V	Case=Nom|Number=Sing|PartForm=Agt|VerbForm=Part|Voice=Act	10	acl	_	SpacesAfter=\r\n|start_char=4167|end_char=4174
+10	harmaus	harmaus	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	SpaceAfter=No|start_char=4176|end_char=4183
+11	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\r\n\r\n|start_char=4183|end_char=4184
+
+# text = Perheenisät kantavat pientä puutaakkaa lämpimiksi lapsilleen.
+# sent_id = 44
+1	Perheenisät	perhe#enisä	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	start_char=4188|end_char=4199
+2	kantavat	kantaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=4200|end_char=4208
+3	pientä	pieni	ADJ	A	Case=Par|Degree=Pos|Number=Sing	4	amod	_	start_char=4209|end_char=4215
+4	puutaakkaa	puu#taakka	NOUN	N	Case=Par|Number=Sing	2	obj	_	start_char=4216|end_char=4226
+5	lämpimiksi	lämmin	ADJ	A	Case=Tra|Degree=Pos|Number=Plur	2	xcomp	_	start_char=4227|end_char=4237
+6	lapsilleen	lapsi	NOUN	N	Case=All|Number=Plur|Person[psor]=3	2	obl	_	SpaceAfter=No|start_char=4238|end_char=4248
+7	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\r\n|start_char=4248|end_char=4249
+
+# text = Pikkutytöt kirjat kainalossaan kikattavat ja toimivat toisiaan, ja poikien tuima joukko työntää lujan kyynärpään oikeaan ja vasempaan.
+# sent_id = 45
+1	Pikkutytöt	pikku#tytö	NOUN	N	Case=Nom|Number=Plur	2	compound:nn	_	start_char=4251|end_char=4261
+2	kirjat	kirja	NOUN	N	Case=Nom|Number=Plur	4	nsubj	_	start_char=4262|end_char=4268
+3	kainalossaan	kainalo	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	2	nmod	_	start_char=4269|end_char=4281
+4	kikattavat	kikattaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=4282|end_char=4292
+5	ja	ja	CCONJ	C	_	6	cc	_	start_char=4293|end_char=4295
+6	toimivat	toimia	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	_	start_char=4296|end_char=4304
+7	toisiaan	toinen	PRON	Pron	Case=Par|Number=Plur|Person[psor]=3|PronType=Rcp	6	obj	_	SpaceAfter=No|start_char=4305|end_char=4313
+8	,	,	PUNCT	Punct	_	13	punct	_	start_char=4313|end_char=4314
+9	ja	ja	CCONJ	C	_	13	cc	_	SpacesAfter=\r\n|start_char=4315|end_char=4317
+10	poikien	poika	NOUN	N	Case=Gen|Number=Plur	12	nmod:poss	_	start_char=4319|end_char=4326
+11	tuima	tuima	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	12	amod	_	start_char=4327|end_char=4332
+12	joukko	joukko	NOUN	N	Case=Nom|Number=Sing	13	nsubj	_	start_char=4333|end_char=4339
+13	työntää	työntää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	_	start_char=4340|end_char=4347
+14	lujan	luja	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	15	amod	_	start_char=4348|end_char=4353
+15	kyynärpään	kyynärpä	NOUN	N	Case=Gen|Number=Sing	13	obj	_	start_char=4354|end_char=4364
+16	oikeaan	oikea	ADJ	A	Case=Ill|Degree=Pos|Number=Sing	13	xcomp	_	start_char=4365|end_char=4372
+17	ja	ja	CCONJ	C	_	18	cc	_	start_char=4373|end_char=4375
+18	vasempaan	vasen	ADJ	A	Case=Ill|Degree=Pos|Number=Sing	16	conj	_	SpaceAfter=No|start_char=4376|end_char=4385
+19	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\r\n\r\n|start_char=4385|end_char=4386
+
+# text = On siinä virrassa käyriä varsia, sameita katseita ja hitaita, voimattomia askeleita.
+# sent_id = 46
+1	On	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	start_char=4390|end_char=4392
+2	siinä	se	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	0	root	_	start_char=4393|end_char=4398
+3	virrassa	virra	NOUN	N	Case=Ine|Number=Sing	2	obl	_	start_char=4399|end_char=4407
+4	käyriä	käyrä	ADJ	A	Case=Par|Degree=Pos|Number=Plur	5	amod	_	start_char=4408|end_char=4414
+5	varsia	varsi	NOUN	N	Case=Par|Number=Plur	3	nsubj:cop	_	SpaceAfter=No|start_char=4415|end_char=4421
+6	,	,	PUNCT	Punct	_	8	punct	_	start_char=4421|end_char=4422
+7	sameita	samea	ADJ	A	Case=Par|Degree=Pos|Number=Plur	8	amod	_	start_char=4423|end_char=4430
+8	katseita	katse	NOUN	N	Case=Par|Number=Plur	5	conj	_	start_char=4431|end_char=4439
+9	ja	ja	CCONJ	C	_	13	cc	_	start_char=4440|end_char=4442
+10	hitaita	hitai	ADJ	A	Case=Par|Degree=Pos|Number=Plur	13	amod	_	SpaceAfter=No|start_char=4443|end_char=4450
+11	,	,	PUNCT	Punct	_	13	punct	_	SpacesAfter=\r\n|start_char=4450|end_char=4451
+12	voimattomia	voimaton	ADJ	A	Case=Par|Degree=Pos|Number=Plur	13	amod	_	start_char=4453|end_char=4464
+13	askeleita	askel	NOUN	N	Case=Par|Number=Plur	5	conj	_	SpaceAfter=No|start_char=4465|end_char=4474
+14	.	.	PUNCT	Punct	_	3	punct	_	start_char=4474|end_char=4475
+
+# text = On siinä röyhkeitä silmäyksiä ja äreitä huudahduksia, on siinä ihmiskunnan mutavesiä.
+# sent_id = 47
+1	On	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	start_char=4476|end_char=4478
+2	siinä	se	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	0	root	_	start_char=4479|end_char=4484
+3	röyhkeitä	röyhkeä	ADJ	A	Case=Par|Degree=Pos|Number=Plur	4	amod	_	start_char=4485|end_char=4494
+4	silmäyksiä	silmäys	NOUN	N	Case=Par|Number=Plur	2	nsubj:cop	_	start_char=4495|end_char=4505
+5	ja	ja	CCONJ	C	_	7	cc	_	start_char=4506|end_char=4508
+6	äreitä	äreä	ADJ	A	Case=Par|Degree=Pos|Number=Plur	7	amod	_	SpacesAfter=\r\n|start_char=4509|end_char=4515
+7	huudahduksia	huudahdus	NOUN	N	Case=Par|Number=Plur	4	conj	_	SpaceAfter=No|start_char=4517|end_char=4529
+8	,	,	PUNCT	Punct	_	10	punct	_	start_char=4529|end_char=4530
+9	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	cop	_	start_char=4531|end_char=4533
+10	siinä	se	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	2	conj	_	start_char=4534|end_char=4539
+11	ihmiskunnan	ihmis#kunta	NOUN	N	Case=Gen|Number=Sing	12	nmod:poss	_	start_char=4540|end_char=4551
+12	mutavesiä	mutavinen	NOUN	N	Case=Par|Number=Plur	10	nsubj:cop	_	SpaceAfter=No|start_char=4552|end_char=4561
+13	.	.	PUNCT	Punct	_	2	punct	_	start_char=4561|end_char=4562
+
+# text = Mutta on siinä uljaita miehiä ja kauniita, kainoja naisia.
+# sent_id = 48
+1	Mutta	mutta	CCONJ	C	_	3	cc	_	start_char=4563|end_char=4568
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	start_char=4569|end_char=4571
+3	siinä	se	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	0	root	_	start_char=4572|end_char=4577
+4	uljaita	uljas	ADJ	A	Case=Par|Degree=Pos|Number=Plur	5	amod	_	SpacesAfter=\r\n|start_char=4578|end_char=4585
+5	miehiä	mies	NOUN	N	Case=Par|Number=Plur	3	nsubj:cop	_	start_char=4587|end_char=4593
+6	ja	ja	CCONJ	C	_	7	cc	_	start_char=4594|end_char=4596
+7	kauniita	kaunis	ADJ	A	Case=Par|Degree=Pos|Number=Plur	5	conj	_	SpaceAfter=No|start_char=4597|end_char=4605
+8	,	,	PUNCT	Punct	_	10	punct	_	start_char=4605|end_char=4606
+9	kainoja	kaina	NOUN	N	Case=Par|Number=Plur	5	conj	_	start_char=4607|end_char=4614
+10	naisia	nainen	NOUN	N	Case=Par|Number=Plur	5	conj	_	SpaceAfter=No|start_char=4615|end_char=4621
+11	.	.	PUNCT	Punct	_	3	punct	_	start_char=4621|end_char=4622
+
+# text = On siinä hymyilyä, onnea ja iloa.
+# sent_id = 49
+1	On	olla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=4623|end_char=4625
+2	siinä	se	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	1	obl	_	start_char=4626|end_char=4631
+3	hymyilyä	hymyily	NOUN	N	Case=Par|Number=Sing	1	nsubj	_	SpaceAfter=No|start_char=4632|end_char=4640
+4	,	,	PUNCT	Punct	_	5	punct	_	start_char=4640|end_char=4641
+5	onnea	onni	NOUN	N	Case=Par|Number=Sing	3	conj	_	start_char=4642|end_char=4647
+6	ja	ja	CCONJ	C	_	7	cc	_	start_char=4648|end_char=4650
+7	iloa	ilo	NOUN	N	Case=Par|Number=Sing	3	conj	_	SpaceAfter=No|start_char=4651|end_char=4655
+8	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\r\n\r\n|start_char=4655|end_char=4656
+
+# text = Kaikilla on sama leima.
+# sent_id = 50
+1	Kaikilla	kaikki	PRON	Pron	Case=Ade|Number=Plur|PronType=Ind	0	root	_	start_char=4660|end_char=4668
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop:own	_	start_char=4669|end_char=4671
+3	sama	sama	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	4	det	_	start_char=4672|end_char=4676
+4	leima	leima	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	SpaceAfter=No|start_char=4677|end_char=4682
+5	.	.	PUNCT	Punct	_	1	punct	_	start_char=4682|end_char=4683
+
+# text = He ovat työn aateloimat.
+# sent_id = 51
+1	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	4	nsubj:cop	_	start_char=4684|end_char=4686
+2	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	start_char=4687|end_char=4691
+3	työn	työ	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	start_char=4692|end_char=4696
+4	aateloimat	aatelo	NOUN	N	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No|start_char=4697|end_char=4707
+5	.	.	PUNCT	Punct	_	4	punct	_	start_char=4707|end_char=4708
+
+# text = Heissä on voimaa rääsyjen alla.
+# sent_id = 52
+1	Heissä	hän	PRON	Pron	Case=Ine|Number=Sing|Person=3|PronType=Prs	0	root	_	start_char=4709|end_char=4715
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop:own	_	start_char=4716|end_char=4718
+3	voimaa	voima	NOUN	N	Case=Par|Number=Sing	1	nsubj:cop	_	SpacesAfter=\r\n|start_char=4719|end_char=4725
+4	rääsyjen	rääsy	NOUN	N	Case=Gen|Number=Plur	1	obl	_	start_char=4727|end_char=4735
+5	alla	alla	ADP	Adp	AdpType=Post	4	case	_	SpaceAfter=No|start_char=4736|end_char=4740
+6	.	.	PUNCT	Punct	_	1	punct	_	start_char=4740|end_char=4741
+
+# text = Heissä on pontta ja sitkeyttä.
+# sent_id = 53
+1	Heissä	hän	PRON	Pron	Case=Ine|Number=Sing|Person=1|PronType=Prs	0	root	_	start_char=4742|end_char=4748
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop:own	_	start_char=4749|end_char=4751
+3	pontta	pontta	NOUN	N	Case=Par|Number=Sing	1	nsubj:cop	_	start_char=4752|end_char=4758
+4	ja	ja	CCONJ	C	_	5	cc	_	start_char=4759|end_char=4761
+5	sitkeyttä	sitkeys	NOUN	N	Case=Par|Number=Sing	3	conj	_	SpaceAfter=No|start_char=4762|end_char=4771
+6	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\r\n\r\n|start_char=4771|end_char=4772
+
+# text = Valtavuossa vaunut kiitävät nyt kiivaammin kuin sunnuntaiajossa.
+# sent_id = 54
+1	Valtavuossa	Valtavuo	PROPN	N	Case=Ine|Number=Sing	3	obl	_	start_char=4776|end_char=4787
+2	vaunut	vaunu	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	start_char=4788|end_char=4794
+3	kiitävät	kiitää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=4795|end_char=4803
+4	nyt	nyt	ADV	Adv	_	3	advmod	_	start_char=4804|end_char=4807
+5	kiivaammin	kiivaasti	ADV	Adv	Degree=Cmp|Derivation=Sti	3	advmod	_	start_char=4808|end_char=4818
+6	kuin	kuin	SCONJ	C	_	7	mark	_	start_char=4819|end_char=4823
+7	sunnuntaiajossa	sunnuntai#ajo	NOUN	N	Case=Ine|Number=Sing	5	advcl	_	SpaceAfter=No|start_char=4824|end_char=4839
+8	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\r\n|start_char=4839|end_char=4840
+
+# text = Johtomiehet ajavat tiukka ilme kasvoillaan ja kiireen tuli silmissään kuin olisi matka taisteloon.
+# sent_id = 55
+1	Johtomiehet	johto#mies	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	start_char=4842|end_char=4853
+2	ajavat	ajaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=4854|end_char=4860
+3	tiukka	tiukka	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	amod	_	start_char=4861|end_char=4867
+4	ilme	ilme	NOUN	N	Case=Nom|Number=Sing	2	obj	_	start_char=4868|end_char=4872
+5	kasvoillaan	kasvot	NOUN	N	Case=Ade|Number=Sing|Person[psor]=3	2	obl	_	start_char=4873|end_char=4884
+6	ja	ja	CCONJ	C	_	8	cc	_	start_char=4885|end_char=4887
+7	kiireen	kiire	NOUN	N	Case=Gen|Number=Sing	8	nsubj	_	start_char=4888|end_char=4895
+8	tuli	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	start_char=4896|end_char=4900
+9	silmissään	silmä	ADV	Adv	_	8	advmod	_	SpacesAfter=\r\n|start_char=4901|end_char=4911
+10	kuin	kuin	SCONJ	C	_	11	mark	_	start_char=4913|end_char=4917
+11	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	8	advcl	_	start_char=4918|end_char=4923
+12	matka	matka	NOUN	N	Case=Nom|Number=Sing	11	nsubj	_	start_char=4924|end_char=4929
+13	taisteloon	taistelo	NOUN	N	Case=Ill|Number=Sing	11	obl	_	SpaceAfter=No|start_char=4930|end_char=4940
+14	.	.	PUNCT	Punct	_	2	punct	_	start_char=4940|end_char=4941
+
+# text = Heille on työ järjen työtä.
+# sent_id = 56
+1	Heille	hän	PRON	Pron	Case=All|Number=Plur|Person=3|PronType=Prs	5	obl	_	start_char=4942|end_char=4948
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	start_char=4949|end_char=4951
+3	työ	työ	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	start_char=4952|end_char=4955
+4	järjen	järki	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	start_char=4956|end_char=4962
+5	työtä	työ	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No|start_char=4963|end_char=4968
+6	.	.	PUNCT	Punct	_	5	punct	_	start_char=4968|end_char=4969
+
+# text = Älä kysy, älä päättele muodosta taikka kasvojen ilmeestä.
+# sent_id = 57
+1	Älä	ei	AUX	V	Mood=Imp|Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	2	aux	_	start_char=4970|end_char=4973
+2	kysy	kysyä	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No|start_char=4974|end_char=4978
+3	,	,	PUNCT	Punct	_	5	punct	_	SpacesAfter=\r\n|start_char=4978|end_char=4979
+4	älä	ei	AUX	V	Mood=Imp|Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	start_char=4981|end_char=4984
+5	päättele	päätellä	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	2	conj	_	start_char=4985|end_char=4993
+6	muodosta	muoto	NOUN	N	Case=Ela|Number=Sing	5	obl	_	start_char=4994|end_char=5002
+7	taikka	taikka	CCONJ	C	_	9	cc	_	start_char=5003|end_char=5009
+8	kasvojen	kasvot	NOUN	N	Case=Gen|Number=Plur	9	nmod:poss	_	start_char=5010|end_char=5018
+9	ilmeestä	ilme	NOUN	N	Case=Ela|Number=Sing	6	conj	_	SpaceAfter=No|start_char=5019|end_char=5027
+10	.	.	PUNCT	Punct	_	2	punct	_	start_char=5027|end_char=5028
+
+# text = Pitäisi tuntea miestä myöten, tutkia laajat asiat, selailla kirjat, päästellä solmut, olla tuhat kättä ja sata päätä.
+# sent_id = 58
+1	Pitäisi	pitää	AUX	V	Mood=Cnd|Number=Sing|Person=0|VerbForm=Fin|Voice=Act	2	aux	_	start_char=5029|end_char=5036
+2	tuntea	tuntea	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	start_char=5037|end_char=5043
+3	miestä	mies	NOUN	N	Case=Par|Number=Sing	2	obj	_	SpacesAfter=\r\n|start_char=5044|end_char=5050
+4	myöten	myöten	ADV	Adv	_	2	advmod	_	SpaceAfter=No|start_char=5052|end_char=5058
+5	,	,	PUNCT	Punct	_	6	punct	_	start_char=5058|end_char=5059
+6	tutkia	tutkia	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	conj	_	start_char=5060|end_char=5066
+7	laajat	laaja	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	8	amod	_	start_char=5067|end_char=5073
+8	asiat	asia	NOUN	N	Case=Nom|Number=Plur	6	obj	_	SpaceAfter=No|start_char=5074|end_char=5079
+9	,	,	PUNCT	Punct	_	10	punct	_	start_char=5079|end_char=5080
+10	selailla	selailla	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	conj	_	start_char=5081|end_char=5089
+11	kirjat	kirja	NOUN	N	Case=Nom|Number=Plur	10	obj	_	SpaceAfter=No|start_char=5090|end_char=5096
+12	,	,	PUNCT	Punct	_	13	punct	_	start_char=5096|end_char=5097
+13	päästellä	päästellä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	10	conj	_	start_char=5098|end_char=5107
+14	solmut	solmu	NOUN	N	Case=Nom|Number=Plur	13	obj	_	SpaceAfter=No|start_char=5108|end_char=5114
+15	,	,	PUNCT	Punct	_	18	punct	_	start_char=5114|end_char=5115
+16	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	18	cop	_	SpacesAfter=\r\n|start_char=5116|end_char=5120
+17	tuhat	tuhat	NUM	Num	Case=Nom|Number=Sing|NumType=Card	18	nummod	_	start_char=5122|end_char=5127
+18	kättä	käsi	NOUN	N	Case=Par|Number=Sing	10	conj	_	start_char=5128|end_char=5133
+19	ja	ja	CCONJ	C	_	21	cc	_	start_char=5134|end_char=5136
+20	sata	sata	NUM	Num	Case=Nom|Number=Sing|NumType=Card	21	nummod	_	start_char=5137|end_char=5141
+21	päätä	pää	NOUN	N	Case=Par|Number=Sing	18	conj	_	SpaceAfter=No|start_char=5142|end_char=5147
+22	.	.	PUNCT	Punct	_	2	punct	_	start_char=5147|end_char=5148
+
+# text = Ja jos kerran selvän saisit, joutuisit ehkä virrasta kosken kuohuun, syöksyisit sinne nurin niskoin.
+# sent_id = 59
+1	Ja	ja	CCONJ	C	_	7	cc	_	start_char=5149|end_char=5151
+2	jos	jos	SCONJ	C	_	5	mark	_	start_char=5152|end_char=5155
+3	kerran	kerran	ADV	Adv	_	5	obl	_	start_char=5156|end_char=5162
+4	selvän	selvä	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	5	obj	_	start_char=5163|end_char=5169
+5	saisit	saada	VERB	V	Mood=Cnd|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	7	advcl	_	SpaceAfter=No|start_char=5170|end_char=5176
+6	,	,	PUNCT	Punct	_	5	punct	_	start_char=5176|end_char=5177
+7	joutuisit	joutua	VERB	V	Mood=Cnd|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpacesAfter=\r\n|start_char=5178|end_char=5187
+8	ehkä	ehkä	ADV	Adv	_	7	advmod	_	start_char=5189|end_char=5193
+9	virrasta	virras	NOUN	N	Case=Ela|Number=Sing	7	obl	_	start_char=5194|end_char=5202
+10	kosken	koski	NOUN	N	Case=Gen|Number=Sing	11	nmod:poss	_	start_char=5203|end_char=5209
+11	kuohuun	kuohu	NOUN	N	Case=Ill|Number=Sing	7	obl	_	SpaceAfter=No|start_char=5210|end_char=5217
+12	,	,	PUNCT	Punct	_	13	punct	_	start_char=5217|end_char=5218
+13	syöksyisit	syöksyä	VERB	V	Mood=Cnd|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	7	conj	_	start_char=5219|end_char=5229
+14	sinne	sinne	ADV	Adv	_	13	advmod	_	start_char=5230|end_char=5235
+15	nurin	nurin	ADV	Adv	_	13	advmod	_	start_char=5236|end_char=5241
+16	niskoin	niska	NOUN	N	Case=Ins|Number=Plur	13	obl	_	SpaceAfter=No|start_char=5242|end_char=5249
+17	.	.	PUNCT	Punct	_	7	punct	_	SpacesAfter=\r\n\r\n|start_char=5249|end_char=5250
+
+# text = Ehkä saat heiltä päännyökkäyksen, ystävällisen tervehdyksen ja silloin he varmaan tuntevat kuuluvansa tähän virtaan ja katselevat sivukäytävillä kulkijoita ylemmällä ymmärryksellä taikka johtajan hallitsevalla vakavuudella.
+# sent_id = 60
+1	Ehkä	ehkä	ADV	Adv	_	2	advmod	_	start_char=5254|end_char=5258
+2	saat	saada	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=5259|end_char=5263
+3	heiltä	hän	PRON	Pron	Case=Abl|Number=Plur|Person=3|PronType=Prs	2	obl	_	start_char=5264|end_char=5270
+4	päännyökkäyksen	pään#nyökkäys	NOUN	N	Case=Gen|Number=Sing	2	obj	_	SpaceAfter=No|start_char=5271|end_char=5286
+5	,	,	PUNCT	Punct	_	7	punct	_	start_char=5286|end_char=5287
+6	ystävällisen	ystävällinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Llinen|Number=Sing	7	amod	_	start_char=5288|end_char=5300
+7	tervehdyksen	tervehdys	NOUN	N	Case=Gen|Number=Sing	4	conj	_	start_char=5301|end_char=5313
+8	ja	ja	CCONJ	C	_	12	cc	_	SpacesAfter=\r\n|start_char=5314|end_char=5316
+9	silloin	silloin	ADV	Adv	_	12	advmod	_	start_char=5318|end_char=5325
+10	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	12	nsubj	_	start_char=5326|end_char=5328
+11	varmaan	varmaan	ADV	Adv	_	12	advmod	_	start_char=5329|end_char=5336
+12	tuntevat	tuntea	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	start_char=5337|end_char=5345
+13	kuuluvansa	kuulua	VERB	V	Case=Gen|Number=Sing|PartForm=Pres|Person[psor]=3|VerbForm=Part|Voice=Act	12	xcomp	_	start_char=5346|end_char=5356
+14	tähän	tämä	PRON	Pron	Case=Ill|Number=Sing|PronType=Dem	15	det	_	start_char=5357|end_char=5362
+15	virtaan	virta	NOUN	N	Case=Ill|Number=Sing	13	obl	_	start_char=5363|end_char=5370
+16	ja	ja	CCONJ	C	_	17	cc	_	start_char=5371|end_char=5373
+17	katselevat	katsella	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	conj	_	SpacesAfter=\r\n|start_char=5374|end_char=5384
+18	sivukäytävillä	sivu#käytävä	NOUN	N	Case=Ade|Number=Plur	17	obl	_	start_char=5386|end_char=5400
+19	kulkijoita	kulkija	NOUN	N	Case=Par|Derivation=Ja|Number=Plur	17	obj	_	start_char=5401|end_char=5411
+20	ylemmällä	ylempi	ADJ	A	Case=Ade|Degree=Pos|Number=Sing	21	amod	_	start_char=5412|end_char=5421
+21	ymmärryksellä	ymmärrys	NOUN	N	Case=Ade|Number=Sing	17	obl	_	start_char=5422|end_char=5435
+22	taikka	taikka	CCONJ	C	_	25	cc	_	start_char=5436|end_char=5442
+23	johtajan	johtaja	NOUN	N	Case=Gen|Derivation=Ja|Number=Sing	25	nmod:poss	_	SpacesAfter=\r\n|start_char=5443|end_char=5451
+24	hallitsevalla	hallitseva	ADJ	A	Case=Ade|Degree=Pos|Number=Sing	25	amod	_	start_char=5453|end_char=5466
+25	vakavuudella	vakavuus	NOUN	N	Case=Ade|Number=Sing	21	conj	_	SpaceAfter=No|start_char=5467|end_char=5479
+26	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\r\n\r\n|start_char=5479|end_char=5480
+
+# text = Taikka he ovat niin kiinteissä ajatuksissa, että näkevät ulkomaailman vain oman työnsä yhteydessä.
+# sent_id = 61
+1	Taikka	taikka	SCONJ	C	_	6	mark	_	start_char=5484|end_char=5490
+2	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	6	nsubj:cop	_	start_char=5491|end_char=5493
+3	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	start_char=5494|end_char=5498
+4	niin	niin	ADV	Adv	_	5	advmod	_	start_char=5499|end_char=5503
+5	kiinteissä	kiinteinen	ADJ	A	Case=Ine|Degree=Pos|Number=Plur	6	amod	_	start_char=5504|end_char=5514
+6	ajatuksissa	ajatus	NOUN	N	Case=Ine|Number=Plur	0	root	_	SpaceAfter=No|start_char=5515|end_char=5526
+7	,	,	PUNCT	Punct	_	9	punct	_	start_char=5526|end_char=5527
+8	että	että	SCONJ	C	_	9	mark	_	start_char=5528|end_char=5532
+9	näkevät	nähdä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	ccomp	_	start_char=5533|end_char=5540
+10	ulkomaailman	ulko#maailma	NOUN	N	Case=Gen|Number=Sing	9	obj	_	SpacesAfter=\r\n|start_char=5541|end_char=5553
+11	vain	vain	ADV	Adv	_	14	advmod	_	start_char=5555|end_char=5559
+12	oman	oma	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	13	amod	_	start_char=5560|end_char=5564
+13	työnsä	työ	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	14	nmod:poss	_	start_char=5565|end_char=5571
+14	yhteydessä	yhteys	NOUN	N	Case=Ine|Derivation=Vs|Number=Sing	9	obl	_	SpaceAfter=No|start_char=5572|end_char=5582
+15	.	.	PUNCT	Punct	_	6	punct	_	start_char=5582|end_char=5583
+
+# text = He katsovat suoraan eteenpäin, pitävät varmasti suuntansa, sivuuttavat juoksussa kaikki muut, vetävät vedet mukanaan lankasuorana keskivirtana, voimallansa tukien vellovia pyörteitä.
+# sent_id = 62
+1	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	start_char=5584|end_char=5586
+2	katsovat	katsoa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=5587|end_char=5595
+3	suoraan	suoraan	ADV	Adv	_	2	advmod	_	start_char=5596|end_char=5603
+4	eteenpäin	eteenpäin	ADV	Adv	_	2	advmod	_	SpaceAfter=No|start_char=5604|end_char=5613
+5	,	,	PUNCT	Punct	_	6	punct	_	start_char=5613|end_char=5614
+6	pitävät	pitää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	SpacesAfter=\r\n|start_char=5615|end_char=5622
+7	varmasti	varmasti	ADV	Adv	Derivation=Sti	6	advmod	_	start_char=5624|end_char=5632
+8	suuntansa	suunta	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	6	obj	_	SpaceAfter=No|start_char=5633|end_char=5642
+9	,	,	PUNCT	Punct	_	10	punct	_	start_char=5642|end_char=5643
+10	sivuuttavat	sivuuttaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	start_char=5644|end_char=5655
+11	juoksussa	juoksu	NOUN	N	Case=Ine|Derivation=U|Number=Sing	10	obl	_	start_char=5656|end_char=5665
+12	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	13	det	_	start_char=5666|end_char=5672
+13	muut	muu	PRON	Pron	Case=Nom|Number=Plur|PronType=Ind	10	obj	_	SpaceAfter=No|start_char=5673|end_char=5677
+14	,	,	PUNCT	Punct	_	15	punct	_	start_char=5677|end_char=5678
+15	vetävät	vetää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	start_char=5679|end_char=5686
+16	vedet	vesi	NOUN	N	Case=Nom|Number=Plur	15	obj	_	SpacesAfter=\r\n|start_char=5687|end_char=5692
+17	mukanaan	mukana	ADV	Adv	Person[psor]=3	15	advmod	_	start_char=5694|end_char=5702
+18	lankasuorana	lanka#suora	NOUN	N	Case=Ess|Number=Sing	15	obl	_	start_char=5703|end_char=5715
+19	keskivirtana	keski#virta	NOUN	N	Case=Ess|Number=Sing	15	obl	_	SpaceAfter=No|start_char=5716|end_char=5728
+20	,	,	PUNCT	Punct	_	22	punct	_	start_char=5728|end_char=5729
+21	voimallansa	voima	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	22	obj	_	start_char=5730|end_char=5741
+22	tukien	tukea	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	24	acl	_	start_char=5742|end_char=5748
+23	vellovia	velloa	VERB	V	Case=Par|Number=Plur|PartForm=Pres|VerbForm=Part|Voice=Act	24	acl	_	SpacesAfter=\r\n|start_char=5749|end_char=5757
+24	pyörteitä	pyörre	NOUN	N	Case=Par|Number=Plur	19	appos	_	SpaceAfter=No|start_char=5759|end_char=5768
+25	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\r\n\r\n|start_char=5768|end_char=5769
+
+# text = Näin on kulkenut ihmisvirta pitkin pitkää siltaa kesät, talvet, vuodet, vuosikymmenet: työstä tullen, kotiin mennen, kotoa tullen, työhön mennen.
+# sent_id = 63
+1	Näin	näin	ADV	Adv	_	3	advmod	_	start_char=5773|end_char=5777
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	start_char=5778|end_char=5780
+3	kulkenut	kulkea	VERB	V	Case=Nom|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	start_char=5781|end_char=5789
+4	ihmisvirta	ihmis#virta	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	start_char=5790|end_char=5800
+5	pitkin	pitkin	ADP	Adp	AdpType=Prep	7	case	_	start_char=5801|end_char=5807
+6	pitkää	pitkä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	7	amod	_	start_char=5808|end_char=5814
+7	siltaa	silta	NOUN	N	Case=Par|Number=Sing	3	obl	_	start_char=5815|end_char=5821
+8	kesät	kesä	NOUN	N	Case=Nom|Number=Plur	7	appos	_	SpaceAfter=No|start_char=5822|end_char=5827
+9	,	,	PUNCT	Punct	_	10	punct	_	start_char=5827|end_char=5828
+10	talvet	talvi	NOUN	N	Case=Nom|Number=Plur	8	conj	_	SpaceAfter=No|start_char=5829|end_char=5835
+11	,	,	PUNCT	Punct	_	12	punct	_	SpacesAfter=\r\n|start_char=5835|end_char=5836
+12	vuodet	vuosi	NOUN	N	Case=Nom|Number=Plur	8	conj	_	SpaceAfter=No|start_char=5838|end_char=5844
+13	,	,	PUNCT	Punct	_	14	punct	_	start_char=5844|end_char=5845
+14	vuosikymmenet	vuosikymmen	NOUN	N	Case=Nom|Number=Plur	8	conj	_	SpaceAfter=No|start_char=5846|end_char=5859
+15	:	:	PUNCT	Punct	_	17	punct	_	start_char=5859|end_char=5860
+16	työstä	työ	NOUN	N	Case=Ela|Number=Sing	17	obl	_	start_char=5861|end_char=5867
+17	tullen	tulla	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	14	advcl	_	SpaceAfter=No|start_char=5868|end_char=5874
+18	,	,	PUNCT	Punct	_	17	punct	_	start_char=5874|end_char=5875
+19	kotiin	koti	NOUN	N	Case=Ill|Number=Sing	17	obl	_	start_char=5876|end_char=5882
+20	mennen	mennen	ADV	Adv	_	17	advmod	_	SpaceAfter=No|start_char=5883|end_char=5889
+21	,	,	PUNCT	Punct	_	23	punct	_	start_char=5889|end_char=5890
+22	kotoa	kotoa	NOUN	N	Case=Par|Number=Sing	23	obj	_	start_char=5891|end_char=5896
+23	tullen	tulla	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	17	conj	_	SpaceAfter=No|start_char=5897|end_char=5903
+24	,	,	PUNCT	Punct	_	25	punct	_	SpacesAfter=\r\n|start_char=5903|end_char=5904
+25	työhön	työ	NOUN	N	Case=Ill|Number=Sing	23	obl	_	start_char=5906|end_char=5912
+26	mennen	mennen	ADV	Adv	_	25	advmod	_	SpaceAfter=No|start_char=5913|end_char=5919
+27	.	.	PUNCT	Punct	_	3	punct	_	start_char=5919|end_char=5920
+
+# text = Tuolta he illoin kaikki tulevat komeamman kaupungin puolelta.
+# sent_id = 64
+1	Tuolta	tuolta	ADV	Adv	_	3	advmod	_	start_char=5921|end_char=5927
+2	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	5	nsubj	_	start_char=5928|end_char=5930
+3	illoin	iltaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	5	advcl	_	start_char=5931|end_char=5937
+4	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	5	nsubj	_	start_char=5938|end_char=5944
+5	tulevat	tulla	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=5945|end_char=5952
+6	komeamman	koma	ADJ	A	Case=Gen|Degree=Cmp|Number=Sing	7	amod	_	start_char=5953|end_char=5962
+7	kaupungin	kaupunki	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	SpacesAfter=\r\n|start_char=5963|end_char=5972
+8	puolelta	puoli	NOUN	N	Case=Abl|Number=Sing	5	obl	_	SpaceAfter=No|start_char=5974|end_char=5982
+9	.	.	PUNCT	Punct	_	5	punct	_	start_char=5982|end_char=5983
+
+# text = Sitä he yksin voimin rakentavat.
+# sent_id = 65
+1	Sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	5	obj	_	start_char=5984|end_char=5988
+2	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	5	nsubj	_	start_char=5989|end_char=5991
+3	yksin	yksin	ADV	Adv	_	5	advmod	_	start_char=5992|end_char=5997
+4	voimin	voima	NOUN	N	Case=Ins|Number=Plur	5	obl	_	start_char=5998|end_char=6004
+5	rakentavat	rakentaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No|start_char=6005|end_char=6015
+6	.	.	PUNCT	Punct	_	5	punct	_	start_char=6015|end_char=6016
+
+# text = Sieltä työn armeijaa virtaa kaikkialta kuin puroja vuorimaalta.
+# sent_id = 66
+1	Sieltä	sieltä	ADV	Adv	_	4	advmod	_	start_char=6017|end_char=6023
+2	työn	työ	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	start_char=6024|end_char=6028
+3	armeijaa	armeija	NOUN	N	Case=Par|Number=Sing	4	nsubj	_	SpacesAfter=\r\n|start_char=6029|end_char=6037
+4	virtaa	virrata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=6039|end_char=6045
+5	kaikkialta	kaikkialta	ADV	Adv	_	4	advmod	_	start_char=6046|end_char=6056
+6	kuin	kuin	SCONJ	C	_	7	mark	_	start_char=6057|end_char=6061
+7	puroja	puro	NOUN	N	Case=Par|Number=Plur	5	advcl	_	start_char=6062|end_char=6068
+8	vuorimaalta	vuori#maa	NOUN	N	Case=Abl|Number=Sing	7	nmod	_	SpaceAfter=No|start_char=6069|end_char=6080
+9	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\r\n\r\n|start_char=6080|end_char=6081
+
+# text = Tuo heidän kuulu kaupunkinsa on heille rakas kuin kullekin on oma luoma.
+# sent_id = 67
+1	Tuo	tuo	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	det	_	start_char=6085|end_char=6088
+2	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	3	nmod:poss	_	start_char=6089|end_char=6095
+3	kuulu	kuulua	NOUN	N	Case=Nom|Number=Sing|Person[psor]=3	7	nsubj:cop	_	start_char=6096|end_char=6101
+4	kaupunkinsa	kaupunki	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	7	nsubj:cop	_	start_char=6102|end_char=6113
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	start_char=6114|end_char=6116
+6	heille	hän	PRON	Pron	Case=All|Number=Plur|Person=3|PronType=Prs	7	obl	_	start_char=6117|end_char=6123
+7	rakas	rakas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	start_char=6124|end_char=6129
+8	kuin	kuin	SCONJ	C	_	9	mark	_	start_char=6130|end_char=6134
+9	kullekin	kukin	PRON	Pron	Case=All|Number=Sing|PronType=Ind	7	advcl	_	start_char=6135|end_char=6143
+10	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	cop:own	_	start_char=6144|end_char=6146
+11	oma	oma	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	12	amod	_	SpacesAfter=\r\n|start_char=6147|end_char=6150
+12	luoma	luoda	NOUN	N	Case=Nom|Number=Sing	9	nsubj:cop	_	SpaceAfter=No|start_char=6152|end_char=6157
+13	.	.	PUNCT	Punct	_	7	punct	_	SpacesAfter=\r\n\r\n|start_char=6157|end_char=6158
+
+# text = Se on kasvanut taajaan ja varmaan, se on maksanut hien ja vaivan.
+# sent_id = 68
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	nsubj	_	start_char=6162|end_char=6164
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	start_char=6165|end_char=6167
+3	kasvanut	kasvaa	VERB	V	Case=Nom|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	start_char=6168|end_char=6176
+4	taajaan	taajaan	ADV	Adv	_	3	advmod	_	start_char=6177|end_char=6184
+5	ja	ja	CCONJ	C	_	10	cc	_	start_char=6185|end_char=6187
+6	varmaan	varmaan	ADV	Adv	_	10	advmod	_	SpaceAfter=No|start_char=6188|end_char=6195
+7	,	,	PUNCT	Punct	_	10	punct	_	start_char=6195|end_char=6196
+8	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	10	nsubj	_	start_char=6197|end_char=6199
+9	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	aux	_	start_char=6200|end_char=6202
+10	maksanut	maksaa	VERB	V	Case=Nom|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	conj	_	start_char=6203|end_char=6211
+11	hien	hien	NOUN	N	Case=Gen|Number=Sing	10	obj	_	start_char=6212|end_char=6216
+12	ja	ja	CCONJ	C	_	13	cc	_	start_char=6217|end_char=6219
+13	vaivan	vaiva	NOUN	N	Case=Gen|Number=Sing	11	conj	_	SpaceAfter=No|start_char=6220|end_char=6226
+14	.	.	PUNCT	Punct	_	3	punct	_	start_char=6226|end_char=6227
+
+# text = Nyt se kohoaa kauniina, laajana, korkeana, sivistyksen viljamaana.
+# sent_id = 69
+1	Nyt	nyt	ADV	Adv	_	3	advmod	_	SpacesAfter=\r\n|start_char=6228|end_char=6231
+2	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	nsubj	_	start_char=6233|end_char=6235
+3	kohoaa	kohota	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=6236|end_char=6242
+4	kauniina	kaunis	ADJ	A	Case=Ess|Degree=Pos|Number=Sing	3	xcomp	_	SpaceAfter=No|start_char=6243|end_char=6251
+5	,	,	PUNCT	Punct	_	6	punct	_	start_char=6251|end_char=6252
+6	laajana	laaja	ADJ	A	Case=Ess|Degree=Pos|Number=Sing	4	conj	_	SpaceAfter=No|start_char=6253|end_char=6260
+7	,	,	PUNCT	Punct	_	8	punct	_	start_char=6260|end_char=6261
+8	korkeana	korkea	ADJ	A	Case=Ess|Degree=Pos|Number=Sing	4	conj	_	SpaceAfter=No|start_char=6262|end_char=6270
+9	,	,	PUNCT	Punct	_	11	punct	_	start_char=6270|end_char=6271
+10	sivistyksen	sivistys	NOUN	N	Case=Gen|Number=Sing	11	nmod:poss	_	start_char=6272|end_char=6283
+11	viljamaana	vilja#maa	NOUN	N	Case=Ess|Number=Sing	4	appos	_	SpaceAfter=No|start_char=6284|end_char=6294
+12	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\r\n\r\n|start_char=6294|end_char=6295
+
+# text = Tuo ihmisvirta sen tietää ja tuntee.
+# sent_id = 70
+1	Tuo	tuo	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	det	_	start_char=6299|end_char=6302
+2	ihmisvirta	ihmis#virta	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	start_char=6303|end_char=6313
+3	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	4	obj	_	start_char=6314|end_char=6317
+4	tietää	tietää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=6318|end_char=6324
+5	ja	ja	CCONJ	C	_	6	cc	_	start_char=6325|end_char=6327
+6	tuntee	tuntea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	_	SpaceAfter=No|start_char=6328|end_char=6334
+7	.	.	PUNCT	Punct	_	4	punct	_	start_char=6334|end_char=6335
+
+# text = Sen valtaväylä ja syrjävirrat tajuavat sydäntensä yhteisen sykinnän.
+# sent_id = 71
+1	Sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	2	nmod:poss	_	start_char=6336|end_char=6339
+2	valtaväylä	valta#väylä	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	start_char=6340|end_char=6350
+3	ja	ja	CCONJ	C	_	4	cc	_	start_char=6351|end_char=6353
+4	syrjävirrat	syrjä#viro	NOUN	N	Case=Nom|Number=Plur	2	conj	_	SpacesAfter=\r\n|start_char=6354|end_char=6365
+5	tajuavat	tajuta	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=6367|end_char=6375
+6	sydäntensä	sydän	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	7	nmod:poss	_	start_char=6376|end_char=6386
+7	yhteisen	yhteinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Inen|Number=Sing	8	amod	_	start_char=6387|end_char=6395
+8	sykinnän	sykintä	NOUN	N	Case=Gen|Number=Sing	5	obj	_	SpaceAfter=No|start_char=6396|end_char=6404
+9	.	.	PUNCT	Punct	_	5	punct	_	start_char=6404|end_char=6405
+
+# text = He ovat kaikki herännyttä, noussutta kansaa.
+# sent_id = 72
+1	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	start_char=6406|end_char=6408
+2	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	start_char=6409|end_char=6413
+3	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	4	obj	_	start_char=6414|end_char=6420
+4	herännyttä	herätä	VERB	V	Case=Par|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No|start_char=6421|end_char=6431
+5	,	,	PUNCT	Punct	_	7	punct	_	SpacesAfter=\r\n|start_char=6431|end_char=6432
+6	noussutta	noustuttaa	VERB	V	Case=Par|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	7	acl	_	start_char=6434|end_char=6443
+7	kansaa	kansa	NOUN	N	Case=Par|Number=Sing	4	conj	_	SpaceAfter=No|start_char=6444|end_char=6450
+8	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\r\n\r\n|start_char=6450|end_char=6451
+
+# text = Yhdessä kasvoi rakentajakansa rakennuksensa keralla.
+# sent_id = 73
+1	Yhdessä	yhdessä	ADV	Adv	_	2	advmod	_	start_char=6455|end_char=6462
+2	kasvoi	kasvaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	start_char=6463|end_char=6469
+3	rakentajakansa	rakentaja	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	start_char=6470|end_char=6484
+4	rakennuksensa	rakennus	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	2	obl	_	start_char=6485|end_char=6498
+5	keralla	keralla	ADP	Adp	AdpType=Post	4	case	_	SpaceAfter=No|start_char=6499|end_char=6506
+6	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\r\n\r\n\s\s\s\s|start_char=6506|end_char=6507
+
+# text = Se yhtä on muuria, yhtä on verta.
+# sent_id = 74
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	nsubj:cop	_	start_char=6515|end_char=6517
+2	yhtä	yhtä	ADV	Adv	_	4	advmod	_	start_char=6518|end_char=6522
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	start_char=6523|end_char=6525
+4	muuria	muuri	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No|start_char=6526|end_char=6532
+5	,	,	PUNCT	Punct	_	6	punct	_	SpacesAfter=\r\n\s\s\s\s|start_char=6532|end_char=6533
+6	yhtä	yhtä	ADV	Adv	_	4	conj	_	start_char=6539|end_char=6543
+7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	start_char=6544|end_char=6546
+8	verta	veri	NOUN	N	Case=Par|Number=Sing	6	nsubj:cop	_	SpaceAfter=No|start_char=6547|end_char=6552
+9	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\r\n\s\s\s\s|start_char=6552|end_char=6553
+
+# text = Sama on sillä elämäkerta.
+# sent_id = 75
+1	Sama	sama	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	4	nsubj:cop	_	start_char=6559|end_char=6563
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	start_char=6564|end_char=6566
+3	sillä	se	PRON	Pron	Case=Ade|Number=Sing|PronType=Dem	4	obl	_	start_char=6567|end_char=6572
+4	elämäkerta	elämä#keri	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No|start_char=6573|end_char=6583
+5	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\r\n\s\s\s\s|start_char=6583|end_char=6584
+
+# text = Jos kaatuu muuri, kaatuu sen kanssa uskollisena rakentajansa!
+# sent_id = 76
+1	Jos	jos	SCONJ	C	_	2	mark	_	start_char=6590|end_char=6593
+2	kaatuu	kaatua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	advcl	_	start_char=6594|end_char=6600
+3	muuri	muuri	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	SpaceAfter=No|start_char=6601|end_char=6606
+4	,	,	PUNCT	Punct	_	2	punct	_	SpacesAfter=\r\n\s\s\s\s|start_char=6606|end_char=6607
+5	kaatuu	kaatua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=6613|end_char=6619
+6	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	5	obl	_	start_char=6620|end_char=6623
+7	kanssa	kanssa	ADP	Adp	AdpType=Post	6	case	_	SpacesAfter=\r\n\s\s\s\s|start_char=6624|end_char=6630
+8	uskollisena	uskollinen	ADJ	A	Case=Ess|Degree=Pos|Derivation=Inen|Number=Sing	5	xcomp	_	start_char=6636|end_char=6647
+9	rakentajansa	rakentaja	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	5	obj	_	SpaceAfter=No|start_char=6648|end_char=6660
+10	!	!	PUNCT	Punct	_	5	punct	_	SpacesAfter=\r\n\r\n|start_char=6660|end_char=6661
+
+# text = Kuulet kyllä vastavirtaa astuessasi näiden sanojen tahdin ja tunnustat samalla elämänlain, jonka tämä kulku, tämä virta itsellensä luo.
+# sent_id = 77
+1	Kuulet	kuulla	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=6665|end_char=6671
+2	kyllä	kyllä	ADV	Adv	_	1	advmod	_	start_char=6672|end_char=6677
+3	vastavirtaa	vasta#virta	NOUN	N	Case=Par|Number=Sing	4	nsubj	_	start_char=6678|end_char=6689
+4	astuessasi	astua	VERB	V	Case=Tra|InfForm=1|Number=Sing|Number[psor]=Sing|Person[psor]=1|VerbForm=Inf|Voice=Act	1	advcl	_	start_char=6690|end_char=6700
+5	näiden	tämä	PRON	Pron	Case=Gen|Number=Plur|PronType=Dem	6	det	_	start_char=6701|end_char=6707
+6	sanojen	sana	NOUN	N	Case=Gen|Number=Plur	7	nmod:poss	_	start_char=6708|end_char=6715
+7	tahdin	tahti	NOUN	N	Case=Gen|Number=Sing	4	obj	_	start_char=6716|end_char=6722
+8	ja	ja	CCONJ	C	_	9	cc	_	SpacesAfter=\r\n|start_char=6723|end_char=6725
+9	tunnustat	tunnustaa	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	1	conj	_	start_char=6727|end_char=6736
+10	samalla	samalla	ADV	Adv	_	9	advmod	_	start_char=6737|end_char=6744
+11	elämänlain	elämä	NOUN	N	Case=Gen|Number=Sing	9	obj	_	SpaceAfter=No|start_char=6745|end_char=6755
+12	,	,	PUNCT	Punct	_	18	punct	_	start_char=6755|end_char=6756
+13	jonka	joka	PRON	Pron	Case=Gen|Number=Sing|PronType=Rel	15	nmod:poss	_	start_char=6757|end_char=6762
+14	tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	15	det	_	start_char=6763|end_char=6767
+15	kulku	kulku	NOUN	N	Case=Nom|Derivation=U|Number=Sing	11	acl:relcl	_	SpaceAfter=No|start_char=6768|end_char=6773
+16	,	,	PUNCT	Punct	_	18	punct	_	start_char=6773|end_char=6774
+17	tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	18	det	_	start_char=6775|end_char=6779
+18	virta	virta	NOUN	N	Case=Nom|Number=Sing	15	conj	_	start_char=6780|end_char=6785
+19	itsellensä	itse	PRON	Pron	Case=Gen|Number=Sing|Person[psor]=3|Reflex=Yes	18	nmod	_	SpacesAfter=\r\n|start_char=6786|end_char=6796
+20	luo	luo	ADP	Adp	AdpType=Post	19	case	_	SpaceAfter=No|start_char=6798|end_char=6801
+21	.	.	PUNCT	Punct	_	1	punct	_	start_char=6801|end_char=6802
+
+# text = Sen elämä on järjellistä täytymystä, jota eivät maan mahdit eikä aseelliset vahdit voi muuksi muuttaa.
+# sent_id = 78
+1	Sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	2	nmod:poss	_	start_char=6803|end_char=6806
+2	elämä	elämä	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	start_char=6807|end_char=6812
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	start_char=6813|end_char=6815
+4	järjellistä	järjellinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	5	amod	_	start_char=6816|end_char=6827
+5	täytymystä	täytymys	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No|start_char=6828|end_char=6838
+6	,	,	PUNCT	Punct	_	16	punct	_	start_char=6838|end_char=6839
+7	jota	joka	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	16	obj	_	start_char=6840|end_char=6844
+8	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	16	aux	_	start_char=6845|end_char=6850
+9	maan	maa	NOUN	N	Case=Gen|Number=Sing	10	nmod:poss	_	start_char=6851|end_char=6855
+10	mahdit	mahti	NOUN	N	Case=Nom|Number=Plur	16	nsubj	_	SpacesAfter=\r\n|start_char=6856|end_char=6862
+11	eikä	ei	AUX	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	13	aux	_	start_char=6864|end_char=6868
+12	aseelliset	aseellinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Plur	13	amod	_	start_char=6869|end_char=6879
+13	vahdit	vahti	NOUN	N	Case=Nom|Number=Plur	10	conj	_	start_char=6880|end_char=6886
+14	voi	voida	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	16	aux	_	start_char=6887|end_char=6890
+15	muuksi	muu	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	16	obl	_	start_char=6891|end_char=6897
+16	muuttaa	muuttaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	acl:relcl	_	SpaceAfter=No|start_char=6898|end_char=6905
+17	.	.	PUNCT	Punct	_	5	punct	_	start_char=6905|end_char=6906
+
+# text = Rakentajakansa elää tässä työssään, vaikka tuhat kuolemaa sen kintereillä kulkisi ja ylitse ajaisi!
+# sent_id = 79
+1	Rakentajakansa	rakenta#jaka	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	start_char=6907|end_char=6921
+2	elää	elää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=6922|end_char=6926
+3	tässä	tämä	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	4	det	_	SpacesAfter=\r\n|start_char=6927|end_char=6932
+4	työssään	työ	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	2	obl	_	SpaceAfter=No|start_char=6934|end_char=6942
+5	,	,	PUNCT	Punct	_	11	punct	_	start_char=6942|end_char=6943
+6	vaikka	vaikka	SCONJ	C	_	11	mark	_	start_char=6944|end_char=6950
+7	tuhat	tuhat	NUM	Num	Case=Nom|Number=Sing|NumType=Card	8	nummod	_	start_char=6951|end_char=6956
+8	kuolemaa	kuolema	NOUN	N	Case=Par|Number=Sing	11	nsubj	_	start_char=6957|end_char=6965
+9	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	10	nmod:poss	_	start_char=6966|end_char=6969
+10	kintereillä	kinteri	NOUN	N	Case=Ade|Number=Plur	11	obl	_	start_char=6970|end_char=6981
+11	kulkisi	kulkea	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	2	advcl	_	start_char=6982|end_char=6989
+12	ja	ja	CCONJ	C	_	14	cc	_	start_char=6990|end_char=6992
+13	ylitse	ylitse	ADV	Adv	_	14	advmod	_	SpacesAfter=\r\n|start_char=6993|end_char=6999
+14	ajaisi	ajaa	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	11	conj	_	SpaceAfter=No|start_char=7001|end_char=7007
+15	!	!	PUNCT	Punct	_	2	punct	_	start_char=7007|end_char=7008
+
+# text = Sitä ei sulut eikä vuoretkaan estä.
+# sent_id = 80
+1	Sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	6	obj	_	start_char=7009|end_char=7013
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	start_char=7014|end_char=7016
+3	sulut	sulu	NOUN	N	Case=Nom|Number=Plur	6	nsubj	_	start_char=7017|end_char=7022
+4	eikä	ei	AUX	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	start_char=7023|end_char=7027
+5	vuoretkaan	vuori	NOUN	N	Case=Par|Clitic=Kaan|Number=Sing	3	conj	_	start_char=7028|end_char=7038
+6	estä	estää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No|start_char=7039|end_char=7043
+7	.	.	PUNCT	Punct	_	6	punct	_	start_char=7043|end_char=7044
+
+# text = Se poistaa sulut, se puhkoo vuoret.
+# sent_id = 81
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	nsubj	_	start_char=7045|end_char=7047
+2	poistaa	poistaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=7048|end_char=7055
+3	sulut	sulu	NOUN	N	Case=Nom|Number=Plur	2	obj	_	SpaceAfter=No|start_char=7056|end_char=7061
+4	,	,	PUNCT	Punct	_	6	punct	_	start_char=7061|end_char=7062
+5	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	6	nsubj	_	SpacesAfter=\r\n|start_char=7063|end_char=7065
+6	puhkoo	puhkoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	start_char=7067|end_char=7073
+7	vuoret	vuori	NOUN	N	Case=Nom|Number=Plur	6	obj	_	SpaceAfter=No|start_char=7074|end_char=7080
+8	.	.	PUNCT	Punct	_	2	punct	_	start_char=7080|end_char=7081
+
+# text = Se tahtoo työhön!
+# sent_id = 82
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	nsubj	_	start_char=7082|end_char=7084
+2	tahtoo	tahtoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=7085|end_char=7091
+3	työhön	työ	NOUN	N	Case=Ill|Number=Sing	2	obl	_	SpaceAfter=No|start_char=7092|end_char=7098
+4	!	!	PUNCT	Punct	_	2	punct	_	SpacesAfter=\r\n\r\n\s\s\s\s\s\s\s|start_char=7098|end_char=7099
+
+# text = * * * * *
+# sent_id = 83
+1	*	*	PUNCT	Punct	_	0	root	_	SpacesAfter=\s\s\s\s\s\s\s|start_char=7110|end_char=7111
+2	*	*	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\s\s\s\s\s\s|start_char=7118|end_char=7119
+3	*	*	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\s\s\s\s\s\s|start_char=7126|end_char=7127
+4	*	*	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\s\s\s\s\s\s|start_char=7134|end_char=7135
+5	*	*	PUNCT	Punct	_	3	punct	_	SpacesAfter=\r\n\r\n|start_char=7142|end_char=7143
+
+# text = Virrassa on monta pyörrettä ja kullakin on oma voimamääränsä, joka imee vesiä vauhtiinsa ja niitä vellottuaan työntää yhä suurempaan ja suurempaan pyörteeseen -- taikka siirtää rantatyyneen.
+# sent_id = 84
+1	Virrassa	virra	NOUN	N	Case=Ine|Number=Sing	0	root	_	start_char=7147|end_char=7155
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	start_char=7156|end_char=7158
+3	monta	moni	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	4	det	_	start_char=7159|end_char=7164
+4	pyörrettä	pyörre	NOUN	N	Case=Par|Number=Sing	1	nsubj:cop	_	start_char=7165|end_char=7174
+5	ja	ja	CCONJ	C	_	6	cc	_	start_char=7175|end_char=7177
+6	kullakin	kukin	PRON	Pron	Case=Ade|Number=Sing|PronType=Ind	1	conj	_	start_char=7178|end_char=7186
+7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop:own	_	start_char=7187|end_char=7189
+8	oma	oma	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	9	amod	_	start_char=7190|end_char=7193
+9	voimamääränsä	voima#määrä	NOUN	N	Case=Nom|Number=Sing|Person[psor]=3	6	nsubj:cop	_	SpaceAfter=No|start_char=7194|end_char=7207
+10	,	,	PUNCT	Punct	_	12	punct	_	start_char=7207|end_char=7208
+11	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	12	nsubj	_	SpacesAfter=\r\n|start_char=7209|end_char=7213
+12	imee	imeä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	acl:relcl	_	start_char=7215|end_char=7219
+13	vesiä	vesi	NOUN	N	Case=Par|Number=Plur	12	obj	_	start_char=7220|end_char=7225
+14	vauhtiinsa	vauhti	NOUN	N	Case=Ill|Number=Sing|Person[psor]=3	12	obl	_	start_char=7226|end_char=7236
+15	ja	ja	CCONJ	C	_	18	cc	_	start_char=7237|end_char=7239
+16	niitä	se	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	17	obj	_	start_char=7240|end_char=7245
+17	vellottuaan	vellota	VERB	V	Case=Ine|InfForm=1|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	18	advcl	_	start_char=7246|end_char=7257
+18	työntää	työntää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	conj	_	start_char=7258|end_char=7265
+19	yhä	yhä	ADV	Adv	_	20	advmod	_	start_char=7266|end_char=7269
+20	suurempaan	suuri	ADJ	A	Case=Ill|Degree=Cmp|Number=Sing	23	amod	_	start_char=7270|end_char=7280
+21	ja	ja	CCONJ	C	_	22	cc	_	SpacesAfter=\r\n|start_char=7281|end_char=7283
+22	suurempaan	suuri	ADJ	A	Case=Ill|Degree=Cmp|Number=Sing	20	conj	_	start_char=7285|end_char=7295
+23	pyörteeseen	pyörre	NOUN	N	Case=Ill|Number=Sing	18	obl	_	start_char=7296|end_char=7307
+24	--	--	PUNCT	Punct	_	26	punct	_	start_char=7308|end_char=7310
+25	taikka	taikka	CCONJ	C	_	26	cc	_	start_char=7311|end_char=7317
+26	siirtää	siirtää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	18	conj	_	start_char=7318|end_char=7325
+27	rantatyyneen	ranta#tyyni	NOUN	N	Case=Ill|Number=Sing	26	obl	_	SpaceAfter=No|start_char=7326|end_char=7338
+28	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\r\n\r\n|start_char=7338|end_char=7339
+
+# text = Mikä pyörre lienee heittänyt kansanpaljouden tälle sillalle ja saanut sen alistamaan jättiläisvoimansa tämän kaupungin rakentamiselle?
+# sent_id = 85
+1	Mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	2	det	_	start_char=7343|end_char=7347
+2	pyörre	pyörre	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	start_char=7348|end_char=7354
+3	lienee	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	4	aux	_	start_char=7355|end_char=7361
+4	heittänyt	heittää	VERB	V	Case=Nom|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	start_char=7362|end_char=7371
+5	kansanpaljouden	kansan#paljous	NOUN	N	Case=Gen|Number=Sing	4	obj	_	start_char=7372|end_char=7387
+6	tälle	tämä	PRON	Pron	Case=All|Number=Sing|PronType=Dem	7	det	_	start_char=7388|end_char=7393
+7	sillalle	silta	NOUN	N	Case=All|Number=Sing	4	obl	_	start_char=7394|end_char=7402
+8	ja	ja	CCONJ	C	_	9	cc	_	start_char=7403|end_char=7405
+9	saanut	saada	VERB	V	Case=Nom|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	4	conj	_	SpacesAfter=\r\n|start_char=7406|end_char=7412
+10	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	11	nsubj	_	start_char=7414|end_char=7417
+11	alistamaan	alistaa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	9	xcomp:ds	_	start_char=7418|end_char=7428
+12	jättiläisvoimansa	jättiläis#voima	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	11	obj	_	start_char=7429|end_char=7446
+13	tämän	tämä	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	14	det	_	start_char=7447|end_char=7452
+14	kaupungin	kaupunki	NOUN	N	Case=Gen|Number=Sing	15	nmod:gobj	_	start_char=7453|end_char=7462
+15	rakentamiselle	rakentaminen	NOUN	N	Case=All|Number=Sing	11	obl	_	SpaceAfter=No|start_char=7463|end_char=7477
+16	?	?	PUNCT	Punct	_	4	punct	_	SpacesAfter=\r\n\r\n|start_char=7477|end_char=7478
+
+# text = Lieneekö se uusien elämänmuotojen etsiminen, se vapautta janoova tahto, joka kaikkialla kaihtaa orjuutta, pelkää raskasta raajoilla raatamista aina yhtä harmaassa tavanmukaisuudessa, pyrkii ruumistaan lepuuttamaan järjen suvannossa, etsii valoisempia asumasijoja, iloisempia ihmisiä, vilkkaampaa liikettä.
+# sent_id = 86
+1	Lieneekö	lietää	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	start_char=7482|end_char=7490
+2	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	nsubj:cop	_	start_char=7491|end_char=7493
+3	uusien	uusi	ADJ	A	Case=Gen|Degree=Pos|Number=Plur	4	amod	_	start_char=7494|end_char=7500
+4	elämänmuotojen	elämän#muoto	NOUN	N	Case=Gen|Number=Plur	5	nmod:gobj	_	start_char=7501|end_char=7515
+5	etsiminen	etsiminen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing	0	root	_	SpaceAfter=No|start_char=7516|end_char=7525
+6	,	,	PUNCT	Punct	_	10	punct	_	start_char=7525|end_char=7526
+7	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	10	det	_	start_char=7527|end_char=7529
+8	vapautta	vapaus	NOUN	N	Case=Par|Number=Sing	9	obj	_	start_char=7530|end_char=7538
+9	janoova	janoa	VERB	V	Case=Nom|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	10	acl	_	SpacesAfter=\r\n|start_char=7539|end_char=7546
+10	tahto	tahto	NOUN	N	Case=Nom|Number=Sing	5	conj	_	SpaceAfter=No|start_char=7548|end_char=7553
+11	,	,	PUNCT	Punct	_	14	punct	_	start_char=7553|end_char=7554
+12	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	14	nsubj	_	start_char=7555|end_char=7559
+13	kaikkialla	kaikkialla	ADV	Adv	_	14	advmod	_	start_char=7560|end_char=7570
+14	kaihtaa	kaihtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	acl:relcl	_	start_char=7571|end_char=7578
+15	orjuutta	orjuus	NOUN	N	Case=Par|Derivation=Vs|Number=Sing	14	obj	_	SpaceAfter=No|start_char=7579|end_char=7587
+16	,	,	PUNCT	Punct	_	17	punct	_	start_char=7587|end_char=7588
+17	pelkää	pelätä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	14	conj	_	start_char=7589|end_char=7595
+18	raskasta	raskas	ADJ	A	Case=Par|Degree=Pos|Number=Sing	19	amod	_	start_char=7596|end_char=7604
+19	raajoilla	raaja	NOUN	N	Case=Ade|Number=Plur	17	obl	_	SpacesAfter=\r\n|start_char=7605|end_char=7614
+20	raatamista	raataminen	NOUN	N	Case=Par|Derivation=Minen|Number=Sing	17	obj	_	start_char=7616|end_char=7626
+21	aina	aina	ADV	Adv	_	23	advmod	_	start_char=7627|end_char=7631
+22	yhtä	yhtä	ADV	Adv	_	23	advmod	_	start_char=7632|end_char=7636
+23	harmaassa	harmaa	ADJ	A	Case=Ine|Degree=Pos|Number=Sing	24	amod	_	start_char=7637|end_char=7646
+24	tavanmukaisuudessa	tavan#mukaisuus	NOUN	N	Case=Ine|Number=Sing	17	obl	_	SpaceAfter=No|start_char=7647|end_char=7665
+25	,	,	PUNCT	Punct	_	26	punct	_	start_char=7665|end_char=7666
+26	pyrkii	pyrkiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	17	conj	_	start_char=7667|end_char=7673
+27	ruumistaan	ruumis	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	28	nsubj	_	SpacesAfter=\r\n|start_char=7674|end_char=7684
+28	lepuuttamaan	lepuuttaa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	26	xcomp	_	start_char=7686|end_char=7698
+29	järjen	järki	NOUN	N	Case=Gen|Number=Sing	30	nmod:poss	_	start_char=7699|end_char=7705
+30	suvannossa	suvanto	NOUN	N	Case=Ine|Number=Sing	28	obl	_	SpaceAfter=No|start_char=7706|end_char=7716
+31	,	,	PUNCT	Punct	_	32	punct	_	start_char=7716|end_char=7717
+32	etsii	etsiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	28	conj	_	start_char=7718|end_char=7723
+33	valoisempia	valoisa	ADJ	A	Case=Par|Degree=Cmp|Derivation=Inen|Number=Plur	34	amod	_	start_char=7724|end_char=7735
+34	asumasijoja	asuma#sija	NOUN	N	Case=Par|Number=Plur	32	obj	_	SpaceAfter=No|start_char=7736|end_char=7747
+35	,	,	PUNCT	Punct	_	37	punct	_	SpacesAfter=\r\n|start_char=7747|end_char=7748
+36	iloisempia	iloinen	ADJ	A	Case=Par|Degree=Cmp|Derivation=Inen|Number=Plur	37	amod	_	start_char=7750|end_char=7760
+37	ihmisiä	ihminen	NOUN	N	Case=Par|Number=Plur	34	conj	_	SpaceAfter=No|start_char=7761|end_char=7768
+38	,	,	PUNCT	Punct	_	40	punct	_	start_char=7768|end_char=7769
+39	vilkkaampaa	vilkas	ADJ	A	Case=Par|Degree=Cmp|Number=Sing	40	amod	_	start_char=7770|end_char=7781
+40	liikettä	liike	NOUN	N	Case=Par|Number=Sing	34	conj	_	SpaceAfter=No|start_char=7782|end_char=7790
+41	.	.	PUNCT	Punct	_	5	punct	_	start_char=7790|end_char=7791
+
+# text = Se heittäytyy vinhaan virtaan kysymättä osaako uida.
+# sent_id = 87
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	nsubj	_	start_char=7792|end_char=7794
+2	heittäytyy	heittäytyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=7795|end_char=7805
+3	vinhaan	vinhas	ADJ	A	Case=Ill|Degree=Pos|Number=Sing	4	amod	_	SpacesAfter=\r\n|start_char=7806|end_char=7813
+4	virtaan	virta	NOUN	N	Case=Ill|Number=Sing	2	obl	_	start_char=7815|end_char=7822
+5	kysymättä	kysyä	VERB	V	Case=Abe|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	2	advcl	_	start_char=7823|end_char=7832
+6	osaako	osata	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	ccomp	_	start_char=7833|end_char=7839
+7	uida	uida	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	6	xcomp	_	SpaceAfter=No|start_char=7840|end_char=7844
+8	.	.	PUNCT	Punct	_	2	punct	_	start_char=7844|end_char=7845
+
+# text = Se ponnistelee, nousee, vaipuu, hukkuukin.
+# sent_id = 88
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	nsubj	_	start_char=7846|end_char=7848
+2	ponnistelee	ponnistella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No|start_char=7849|end_char=7860
+3	,	,	PUNCT	Punct	_	4	punct	_	start_char=7860|end_char=7861
+4	nousee	nousta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No|start_char=7862|end_char=7868
+5	,	,	PUNCT	Punct	_	6	punct	_	start_char=7868|end_char=7869
+6	vaipuu	vaipua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No|start_char=7870|end_char=7876
+7	,	,	PUNCT	Punct	_	8	punct	_	SpacesAfter=\r\n|start_char=7876|end_char=7877
+8	hukkuukin	hukkua	VERB	V	Clitic=Kin|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No|start_char=7879|end_char=7888
+9	.	.	PUNCT	Punct	_	2	punct	_	start_char=7888|end_char=7889
+
+# text = Mutta vaikka uhrit ovat monet, paisuu virran voima valtavaksi.
+# sent_id = 89
+1	Mutta	mutta	CCONJ	C	_	7	cc	_	start_char=7890|end_char=7895
+2	vaikka	vaikka	SCONJ	C	_	5	mark	_	start_char=7896|end_char=7902
+3	uhrit	uhri	NOUN	N	Case=Nom|Number=Plur	5	nsubj:cop	_	start_char=7903|end_char=7908
+4	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	start_char=7909|end_char=7913
+5	monet	moni	PRON	Pron	Case=Nom|Number=Plur|PronType=Ind	7	advcl	_	SpaceAfter=No|start_char=7914|end_char=7919
+6	,	,	PUNCT	Punct	_	5	punct	_	start_char=7919|end_char=7920
+7	paisuu	paisua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=7921|end_char=7927
+8	virran	virta	NOUN	N	Case=Gen|Number=Sing	9	nmod:poss	_	start_char=7928|end_char=7934
+9	voima	voima	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	SpacesAfter=\r\n|start_char=7935|end_char=7940
+10	valtavaksi	valtava	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	7	xcomp	_	SpaceAfter=No|start_char=7942|end_char=7952
+11	.	.	PUNCT	Punct	_	7	punct	_	start_char=7952|end_char=7953
+
+# text = Ja vaikka he seuraisivat virran painoa suunnasta, päämäärästä tietämättä, alistuen valveutuneiden johtoon, tuottavat he niinkin hyötyä.
+# sent_id = 90
+1	Ja	ja	CCONJ	C	_	16	cc	_	start_char=7954|end_char=7956
+2	vaikka	vaikka	SCONJ	C	_	4	mark	_	start_char=7957|end_char=7963
+3	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	start_char=7964|end_char=7966
+4	seuraisivat	seurata	VERB	V	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin|Voice=Act	16	advcl	_	start_char=7967|end_char=7978
+5	virran	virta	NOUN	N	Case=Gen|Number=Sing	6	nmod:poss	_	start_char=7979|end_char=7985
+6	painoa	paino	NOUN	N	Case=Par|Number=Sing	4	obj	_	start_char=7986|end_char=7992
+7	suunnasta	suunta	NOUN	N	Case=Ela|Number=Sing	4	obl	_	SpaceAfter=No|start_char=7993|end_char=8002
+8	,	,	PUNCT	Punct	_	10	punct	_	SpacesAfter=\r\n|start_char=8002|end_char=8003
+9	päämäärästä	pää#määrä	NOUN	N	Case=Ela|Number=Sing	10	obl	_	start_char=8005|end_char=8016
+10	tietämättä	tietää	VERB	V	Case=Abe|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	4	advcl	_	SpaceAfter=No|start_char=8017|end_char=8027
+11	,	,	PUNCT	Punct	_	12	punct	_	start_char=8027|end_char=8028
+12	alistuen	alistua	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	10	conj	_	start_char=8029|end_char=8037
+13	valveutuneiden	valveutua	VERB	V	Case=Gen|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	14	nmod:poss	_	start_char=8038|end_char=8052
+14	johtoon	johto	NOUN	N	Case=Ill|Number=Sing	12	obl	_	SpaceAfter=No|start_char=8053|end_char=8060
+15	,	,	PUNCT	Punct	_	4	punct	_	start_char=8060|end_char=8061
+16	tuottavat	tuottaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=8062|end_char=8071
+17	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	16	nsubj	_	SpacesAfter=\r\n|start_char=8072|end_char=8074
+18	niinkin	niin	ADV	Adv	Clitic=Kin	19	advmod	_	start_char=8076|end_char=8083
+19	hyötyä	hyöty	NOUN	N	Case=Par|Derivation=U|Number=Sing	16	obj	_	SpaceAfter=No|start_char=8084|end_char=8090
+20	.	.	PUNCT	Punct	_	16	punct	_	SpacesAfter=\r\n\r\n|start_char=8090|end_char=8091
+
+# text = Kaikki mutaiset ja likaiset pohjavedetkin virta vetää syvennyksistä eteenpäin kiitäessään, syventäen ja laajentaen latuaan.
+# sent_id = 91
+1	Kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	5	det	_	start_char=8095|end_char=8101
+2	mutaiset	mutainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Plur	5	amod	_	start_char=8102|end_char=8110
+3	ja	ja	CCONJ	C	_	4	cc	_	start_char=8111|end_char=8113
+4	likaiset	likainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Plur	2	conj	_	start_char=8114|end_char=8122
+5	pohjavedetkin	pohja#veski	NOUN	N	Case=Nom|Clitic=Kin|Number=Plur	7	obj	_	start_char=8123|end_char=8136
+6	virta	virta	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	start_char=8137|end_char=8142
+7	vetää	vetää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=8143|end_char=8148
+8	syvennyksistä	syvennys	NOUN	N	Case=Ela|Number=Plur	7	obl	_	SpacesAfter=\r\n|start_char=8149|end_char=8162
+9	eteenpäin	eteenpäin	ADV	Adv	_	7	advmod	_	start_char=8164|end_char=8173
+10	kiitäessään	kiitää	VERB	V	Case=Ine|InfForm=2|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	7	advcl	_	SpaceAfter=No|start_char=8174|end_char=8185
+11	,	,	PUNCT	Punct	_	12	punct	_	start_char=8185|end_char=8186
+12	syventäen	syventää	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	10	conj	_	start_char=8187|end_char=8196
+13	ja	ja	CCONJ	C	_	14	cc	_	start_char=8197|end_char=8199
+14	laajentaen	laajentaa	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	10	conj	_	start_char=8200|end_char=8210
+15	latuaan	latu	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	14	obj	_	SpaceAfter=No|start_char=8211|end_char=8218
+16	.	.	PUNCT	Punct	_	7	punct	_	start_char=8218|end_char=8219
+
+# text = Vasta kun uoma on puhdas ja pohja kova, virranjuoksu tasainen, selvenevät vedet ja muta painuu pohjaan kiteytyäkseen lujaksi maaperäksi.
+# sent_id = 92
+1	Vasta	vasta	ADV	Adv	_	2	advmod	_	start_char=8220|end_char=8225
+2	kun	kun	SCONJ	C	_	5	mark	_	SpacesAfter=\r\n|start_char=8226|end_char=8229
+3	uoma	uoma	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	start_char=8231|end_char=8235
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	start_char=8236|end_char=8238
+5	puhdas	puhdas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	11	advcl	_	start_char=8239|end_char=8245
+6	ja	ja	CCONJ	C	_	8	cc	_	start_char=8246|end_char=8248
+7	pohja	pohja	NOUN	N	Case=Nom|Number=Sing	8	nsubj:cop	_	start_char=8249|end_char=8254
+8	kova	kova	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	5	conj	_	SpaceAfter=No|start_char=8255|end_char=8259
+9	,	,	PUNCT	Punct	_	11	punct	_	start_char=8259|end_char=8260
+10	virranjuoksu	virran#juoksu	NOUN	N	Case=Nom|Number=Sing	11	nsubj:cop	_	start_char=8261|end_char=8273
+11	tasainen	tasainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	0	root	_	SpaceAfter=No|start_char=8274|end_char=8282
+12	,	,	PUNCT	Punct	_	13	punct	_	start_char=8282|end_char=8283
+13	selvenevät	selvetä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	conj	_	start_char=8284|end_char=8294
+14	vedet	vesi	NOUN	N	Case=Nom|Number=Plur	13	obj	_	SpacesAfter=\r\n|start_char=8295|end_char=8300
+15	ja	ja	CCONJ	C	_	17	cc	_	start_char=8302|end_char=8304
+16	muta	muta	NOUN	N	Case=Nom|Number=Sing	17	nsubj	_	start_char=8305|end_char=8309
+17	painuu	painua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	conj	_	start_char=8310|end_char=8316
+18	pohjaan	pohja	NOUN	N	Case=Ill|Number=Sing	17	obl	_	start_char=8317|end_char=8324
+19	kiteytyäkseen	kiteytyä	VERB	V	Case=Tra|InfForm=1|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	17	advcl	_	start_char=8325|end_char=8338
+20	lujaksi	luja	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	19	xcomp	_	start_char=8339|end_char=8346
+21	maaperäksi	maa#perä	NOUN	N	Case=Tra|Number=Sing	19	xcomp	_	SpaceAfter=No|start_char=8347|end_char=8357
+22	.	.	PUNCT	Punct	_	11	punct	_	SpacesAfter=\r\n\r\n|start_char=8357|end_char=8358
+
+# text = Ihmisvirrassa vallitsee vesien laki.
+# sent_id = 93
+1	Ihmisvirrassa	ihmis#virta	NOUN	N	Case=Ine|Number=Sing	2	obl	_	start_char=8362|end_char=8375
+2	vallitsee	vallita	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	start_char=8376|end_char=8385
+3	vesien	vesi	NOUN	N	Case=Gen|Number=Plur	4	nmod:poss	_	start_char=8386|end_char=8392
+4	laki	laki	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	SpaceAfter=No|start_char=8393|end_char=8397
+5	.	.	PUNCT	Punct	_	2	punct	_	start_char=8397|end_char=8398
+
+# text = Se on saanut alkunsa kaukaa, laajasta maasta, niistä seuduista, joissa taistelu on ollut kiihkein ja elämänhalu voimakkain.
+# sent_id = 94
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	nsubj	_	start_char=8399|end_char=8401
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	start_char=8402|end_char=8404
+3	saanut	saada	VERB	V	Case=Nom|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	start_char=8405|end_char=8411
+4	alkunsa	alku	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	3	obj	_	start_char=8412|end_char=8419
+5	kaukaa	kaukaa	ADV	Adv	_	3	advmod	_	SpaceAfter=No|start_char=8420|end_char=8426
+6	,	,	PUNCT	Punct	_	8	punct	_	SpacesAfter=\r\n|start_char=8426|end_char=8427
+7	laajasta	laaja	ADJ	A	Case=Ela|Degree=Pos|Number=Sing	8	amod	_	start_char=8429|end_char=8437
+8	maasta	maa	NOUN	N	Case=Ela|Number=Sing	5	appos	_	SpaceAfter=No|start_char=8438|end_char=8444
+9	,	,	PUNCT	Punct	_	11	punct	_	start_char=8444|end_char=8445
+10	niistä	se	PRON	Pron	Case=Ela|Number=Plur|PronType=Dem	11	det	_	start_char=8446|end_char=8452
+11	seuduista	seutu	NOUN	N	Case=Ela|Number=Plur	8	appos	_	SpaceAfter=No|start_char=8453|end_char=8462
+12	,	,	PUNCT	Punct	_	17	punct	_	start_char=8462|end_char=8463
+13	joissa	joka	PRON	Pron	Case=Ine|Number=Plur|PronType=Rel	17	obl	_	start_char=8464|end_char=8470
+14	taistelu	taistelu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	17	nsubj:cop	_	start_char=8471|end_char=8479
+15	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	17	aux	_	start_char=8480|end_char=8482
+16	ollut	olla	AUX	V	Case=Nom|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	17	cop	_	start_char=8483|end_char=8488
+17	kiihkein	kiihkein	ADJ	A	Case=Nom|Degree=Sup|Number=Sing	11	acl:relcl	_	SpacesAfter=\r\n|start_char=8489|end_char=8497
+18	ja	ja	CCONJ	C	_	20	cc	_	start_char=8499|end_char=8501
+19	elämänhalu	elämä#halu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	20	nsubj:cop	_	start_char=8502|end_char=8512
+20	voimakkain	voimakas	ADJ	A	Case=Nom|Degree=Sup|Number=Sing	17	conj	_	SpaceAfter=No|start_char=8513|end_char=8523
+21	.	.	PUNCT	Punct	_	3	punct	_	start_char=8523|end_char=8524
+
+# text = Sen on sisällisen voiman pakko kuljettanut yhä kauemmaksi, kuumaan pyörteeseen, elämän otteluun, niinkuin maan uumenista vesi virtana pyrkii mereen.
+# sent_id = 95
+1	Sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	6	nsubj	_	start_char=8525|end_char=8528
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	start_char=8529|end_char=8531
+3	sisällisen	sisällinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Inen|Number=Sing	4	amod	_	start_char=8532|end_char=8542
+4	voiman	voima	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	start_char=8543|end_char=8549
+5	pakko	pakko	NOUN	N	Case=Nom|Number=Sing	0	root	_	start_char=8550|end_char=8555
+6	kuljettanut	kuljettaa	VERB	V	Case=Nom|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	5	xcomp:ds	_	SpacesAfter=\r\n|start_char=8556|end_char=8567
+7	yhä	yhä	ADV	Adv	_	8	advmod	_	start_char=8569|end_char=8572
+8	kauemmaksi	kauemmaksi	ADJ	A	Case=Tra|Degree=Cmp|Number=Sing	6	xcomp	_	SpaceAfter=No|start_char=8573|end_char=8583
+9	,	,	PUNCT	Punct	_	11	punct	_	start_char=8583|end_char=8584
+10	kuumaan	kuuma	ADJ	A	Case=Ill|Degree=Pos|Number=Sing	11	amod	_	start_char=8585|end_char=8592
+11	pyörteeseen	pyörre	NOUN	N	Case=Ill|Number=Sing	8	appos	_	SpaceAfter=No|start_char=8593|end_char=8604
+12	,	,	PUNCT	Punct	_	14	punct	_	start_char=8604|end_char=8605
+13	elämän	elämä	NOUN	N	Case=Gen|Number=Sing	14	nmod:poss	_	start_char=8606|end_char=8612
+14	otteluun	ottelu	NOUN	N	Case=Ill|Derivation=U|Number=Sing	11	conj	_	SpaceAfter=No|start_char=8613|end_char=8621
+15	,	,	PUNCT	Punct	_	21	punct	_	start_char=8621|end_char=8622
+16	niinkuin	niinkuin	ADV	Adv	_	21	advmod	_	start_char=8623|end_char=8631
+17	maan	maa	NOUN	N	Case=Gen|Number=Sing	18	nmod:poss	_	SpacesAfter=\r\n|start_char=8632|end_char=8636
+18	uumenista	uumen	NOUN	N	Case=Ela|Number=Plur	21	obl	_	start_char=8638|end_char=8647
+19	vesi	vesi	NOUN	N	Case=Nom|Number=Sing	21	nsubj	_	start_char=8648|end_char=8652
+20	virtana	virta	NOUN	N	Case=Ess|Number=Sing	19	nmod	_	start_char=8653|end_char=8660
+21	pyrkii	pyrkiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	conj	_	start_char=8661|end_char=8667
+22	mereen	meri	NOUN	N	Case=Ill|Number=Sing	21	obl	_	SpaceAfter=No|start_char=8668|end_char=8674
+23	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter=\r\n|start_char=8674|end_char=8675
+
