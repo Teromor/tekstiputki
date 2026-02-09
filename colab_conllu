@@ -1,0 +1,23 @@
+!pip install stanza
+
+import requests
+import stanza
+from stanza.utils.conll import CoNLL
+
+# Lataa Stanza (suomi)
+stanza.download("fi")
+nlp = stanza.Pipeline(lang="fi", processors="tokenize,pos,lemma,depparse")
+
+# Hae tekstisisältö URL:sta
+url = "https://raw.githubusercontent.com/Teromor/tekstiputki/refs/heads/main/VIRRAN%20MUKANA_genai.txt"
+response = requests.get(url)
+response.encoding = "utf-8"
+teksti = response.text
+
+# Aja analyysi
+doc = nlp(teksti)
+
+output_path = "annotoitu2.conllu"
+CoNLL.write_doc2conll(doc, output_path)
+
+print(f"Valmis. CoNLL-U-tiedosto tallennettu nimellä: {output_path}")
