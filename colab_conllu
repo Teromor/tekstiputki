@@ -1,3 +1,5 @@
+# Colab-ympäristössä käytettäväksi
+
 !pip install stanza
 
 import requests
