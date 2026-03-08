@@ -1,0 +1,312 @@
+# ============================================================
+# visualisoinnit.R
+# Tekstianalyysien vertailevat graafit
+# Lukee: tulokset/tulokset.csv (Python-analyysin tuotos)
+# Tuottaa: kuvat/ -kansioon PNG-tiedostot
+# ============================================================
+
+library(ggplot2)
+library(jsonlite)
+library(dplyr)
+library(tidyr)
+
+# ── Värit ja teema ────────────────────────────────────────────────────────────
+
+VARIT <- c(
+  "ihmistxt" = "#2C7BB6",
+  "aitxt"    = "#D7191C"
+)
+
+NIMET <- c(
+  "ihmistxt" = "Ihminen",
+  "aitxt"    = "Tekoäly"
+)
+
+# Värit nimien mukaan (käytetään skaaloissa kun data sisältää NIMET-arvot)
+VARIT_NIMET <- c(
+  "Ihminen" = "#2C7BB6",
+  "Tekoäly" = "#D7191C"
+)
+
+perusteema <- theme_minimal(base_size = 13) +
+  theme(
+    plot.title       = element_text(face = "bold", size = 15, margin = margin(b = 8)),
+    plot.subtitle    = element_text(color = "grey40", size = 11, margin = margin(b = 12)),
+    plot.caption     = element_text(color = "grey55", size = 9),
+    panel.grid.minor = element_blank(),
+    panel.grid.major = element_line(color = "grey92"),
+    legend.position  = "bottom",
+    legend.title     = element_blank(),
+    axis.title       = element_text(size = 11),
+    axis.text        = element_text(size = 10)
+  )
+
+# ── Hakemistot ────────────────────────────────────────────────────────────────
+
+dir.create("kuvat", showWarnings = FALSE)
+
+# ── Lataa data ────────────────────────────────────────────────────────────────
+
+df <- read.csv("tulokset/tulokset.csv",
+               encoding = "UTF-8",
+               stringsAsFactors = FALSE)
+
+# Tarkista että molemmat tekstit löytyvät
+if (nrow(df) < 2) stop("tulokset.csv pitää sisältää vähintään 2 riviä.")
+
+# Muuta teksti-sarake luettavaksi nimeksi
+df$nimi <- NIMET[df$teksti]
+df$nimi <- factor(df$nimi, levels = unname(NIMET))
+
+
+# ════════════════════════════════════════════════════════════
+# 1. LAUSEPITUUKSIEN JAKAUMA — boxplot + violinplot
+# ════════════════════════════════════════════════════════════
+
+# Pura lausepituudet JSON-sarakkeesta pitkään formaattiin
+lp_lista <- lapply(seq_len(nrow(df)), function(i) {
+  pituudet <- fromJSON(df$lausepituudet_json[i])
+  data.frame(
+    teksti     = df$teksti[i],
+    nimi       = df$nimi[i],
+    lausepituus = pituudet
+  )
+})
+lp_df <- do.call(rbind, lp_lista)
+lp_df$nimi <- factor(lp_df$nimi, levels = unname(NIMET))
+
+# Tilastot annotaatiota varten
+lp_stats <- df %>%
+  select(teksti, nimi, lp_ka, lp_mediaani, lp_sd) %>%
+  mutate(
+    annotaatio = paste0(
+      "ka=", round(lp_ka, 1),
+      "  md=", round(lp_mediaani, 1),
+      "  sd=", round(lp_sd, 1)
+    )
+  )
+
+p1 <- ggplot(lp_df, aes(x = nimi, y = lausepituus, fill = nimi, color = nimi)) +
+  geom_violin(alpha = 0.25, width = 0.8, linewidth = 0.6) +
+  geom_boxplot(width = 0.2, alpha = 0.7, outlier.shape = 21,
+               outlier.size = 1.5, linewidth = 0.6) +
+  scale_fill_manual(values  = VARIT_NIMET) +
+  scale_color_manual(values = VARIT_NIMET) +
+  annotate("text",
+           x     = lp_stats$nimi,
+           y     = max(lp_df$lausepituus) * 1.04,
+           label = lp_stats$annotaatio,
+           size  = 3.2, color = "grey30") +
+  labs(
+    title    = "Lausepituuksien jakauma",
+    subtitle = "Sanemäärä per lause (välimerkit poistettu)",
+    x        = NULL,
+    y        = "Sanoja / lause",
+    caption  = "Pylväs = mediaani, laatikko = IQR, viikset = 1.5×IQR"
+  ) +
+  perusteema +
+  theme(legend.position = "none")
+
+ggsave("kuvat/1_lausepituudet.png", p1,
+       width = 7, height = 5.5, dpi = 180)
+cat("✓ kuvat/1_lausepituudet.png\n")
+
+
+# ════════════════════════════════════════════════════════════
+# 2. SANALUOKKAJAKAUMAT — vaakasuora pylväsdiagrammi
+# ════════════════════════════════════════════════════════════
+
+# Pura sanaluokkaprosentit JSON-sarakkeesta
+pos_lista <- lapply(seq_len(nrow(df)), function(i) {
+  pos_raw <- fromJSON(df$sanaluokat_pct_json[i])
+  data.frame(
+    teksti = df$teksti[i],
+    nimi   = df$nimi[i],
+    upos   = names(pos_raw),
+    pct    = unlist(pos_raw)
+  )
+})
+pos_df <- do.call(rbind, pos_lista)
+pos_df$nimi <- factor(pos_df$nimi, levels = unname(NIMET))
+
+# Järjestä sanaluokat ihmistekstin frekvenssin mukaan
+upos_jarjestys <- pos_df %>%
+  filter(teksti == df$teksti[1]) %>%
+  arrange(pct) %>%
+  pull(upos)
+pos_df$upos <- factor(pos_df$upos, levels = upos_jarjestys)
+
+# Chi-square-tulos annotaatiota varten
+chi2_teksti <- paste0(
+  "χ² = ", df$chi2[1],
+  ",  df = ", df$chi2_df[1],
+  ",  p = ", formatC(df$chi2_p[1], format = "f", digits = 4)
+)
+
+p2 <- ggplot(pos_df, aes(x = upos, y = pct, fill = nimi)) +
+  geom_col(position = position_dodge(width = 0.7),
+           width = 0.65, alpha = 0.9) +
+  scale_fill_manual(values = VARIT_NIMET) +
+  coord_flip() +
+  labs(
+    title    = "Sanaluokkajakaumat",
+    subtitle = chi2_teksti,
+    x        = NULL,
+    y        = "Osuus kaikista tokeneista (%)",
+    caption  = "Mukana kaikki sanaluokat, PUNCT poistettu"
+  ) +
+  perusteema +
+  theme(legend.position = "bottom")
+
+ggsave("kuvat/2_sanaluokat.png", p2,
+       width = 8, height = 6, dpi = 180)
+cat("✓ kuvat/2_sanaluokat.png\n")
+
+
+# ════════════════════════════════════════════════════════════
+# 3. TTR-VERTAILU — pistediagrammi lumellaväleillä
+# ════════════════════════════════════════════════════════════
+
+ttr_df <- df %>%
+  select(teksti, nimi, ttr, ttr2) %>%
+  pivot_longer(cols = c(ttr, ttr2),
+               names_to  = "tyyppi",
+               values_to = "arvo") %>%
+  mutate(
+    tyyppi_nimi = case_when(
+      tyyppi == "ttr"  ~ "TTR (pintasana, norm.)",
+      tyyppi == "ttr2" ~ "TTR (lemma)"
+    ),
+    tyyppi_nimi = factor(tyyppi_nimi,
+                         levels = c("TTR (pintasana, norm.)", "TTR (lemma)"))
+  )
+
+p3 <- ggplot(ttr_df, aes(x = tyyppi_nimi, y = arvo,
+                         color = nimi, shape = nimi, group = nimi)) +
+  geom_line(linewidth = 0.8, alpha = 0.5,
+            aes(group = nimi), linetype = "dashed") +
+  geom_point(size = 5, alpha = 0.9) +
+  geom_text(aes(label = round(arvo, 3)),
+            vjust = -1.2, size = 3.5, show.legend = FALSE) +
+  scale_color_manual(values = VARIT, labels = NIMET) +
+  scale_shape_manual(values = c(16, 17), labels = NIMET) +
+  scale_y_continuous(limits = c(0, 1),
+                     labels = scales::percent_format(accuracy = 1)) +
+  labs(
+    title    = "Leksikaalinen variaatio (TTR)",
+    subtitle = "Type-token ratio pintasanoista ja lemmoista",
+    x        = NULL,
+    y        = "TTR-arvo",
+    caption  = "Pintasanat normalisoitu (lowercase, reunavälimerkit poistettu)"
+  ) +
+  perusteema +
+  theme(legend.position = "bottom")
+
+ggsave("kuvat/3_ttr.png", p3,
+       width = 7, height = 5.5, dpi = 180)
+cat("✓ kuvat/3_ttr.png\n")
+
+
+# ════════════════════════════════════════════════════════════
+# 4. LEMMAFREKVENSSI — top-20 sanat rinnakkain
+# ════════════════════════════════════════════════════════════
+
+TOP_N <- 20
+
+# Pura top10-lemmat kummastakin tekstistä ja yhdistä
+lemma_lista <- lapply(seq_len(nrow(df)), function(i) {
+  lemmat <- fromJSON(df$top10_lemmat_json[i])
+  data.frame(
+    teksti = df$teksti[i],
+    nimi   = df$nimi[i],
+    lemma  = lemmat$lemma,
+    n      = lemmat$n
+  )
+})
+lemma_df <- do.call(rbind, lemma_lista)
+
+# Ota kaikki uniikit lemmat molemmista ja täydennä nollilla
+kaikki_lemmat <- unique(lemma_df$lemma)
+lemma_wide <- lemma_df %>%
+  select(teksti, nimi, lemma, n) %>%
+  pivot_wider(names_from = teksti, values_from = n, values_fill = 0)
+
+# Laske järjestys yhteisluvun mukaan
+teksti1 <- df$teksti[1]
+teksti2 <- df$teksti[2]
+
+lemma_wide <- lemma_wide %>%
+  group_by(lemma) %>%
+  summarise(across(all_of(c(teksti1, teksti2)), sum), .groups = "drop") %>%
+  mutate(yht = .data[[teksti1]] + .data[[teksti2]]) %>%
+  arrange(desc(yht)) %>%
+  slice_head(n = TOP_N)
+
+lemma_jarjestys <- unique(lemma_wide$lemma)
+
+lemma_long <- lemma_wide %>%
+  pivot_longer(cols = all_of(c(teksti1, teksti2)),
+               names_to  = "teksti",
+               values_to = "n") %>%
+  mutate(
+    nimi  = NIMET[teksti],
+    nimi  = factor(nimi, levels = unname(NIMET)),
+    lemma = factor(lemma, levels = rev(lemma_jarjestys))
+  )
+
+p4 <- ggplot(lemma_long, aes(x = lemma, y = n,
+                             fill = nimi, color = nimi)) +
+  geom_col(position = position_dodge(width = 0.7),
+           width = 0.65, alpha = 0.9) +
+  scale_fill_manual(values  = VARIT_NIMET) +
+  scale_color_manual(values = VARIT_NIMET) +
+  coord_flip() +
+  labs(
+    title    = paste0("Yleisimmät lemmat (top ", TOP_N, ")"),
+    subtitle = "Perusmuotoisten sanojen esiintymisfrekvenssi",
+    x        = NULL,
+    y        = "Esiintymismäärä",
+    caption  = "Välimerkit poistettu laskennasta"
+  ) +
+  perusteema +
+  theme(legend.position = "bottom")
+
+ggsave("kuvat/4_lemmafrekvenssi.png", p4,
+       width = 8, height = 7, dpi = 180)
+cat("✓ kuvat/4_lemmafrekvenssi.png\n")
+
+
+# ════════════════════════════════════════════════════════════
+# 5. LAUSEPITUUDET TEKSTIN EDETESSÄ — scatter + LOESS-viiva
+# ════════════════════════════════════════════════════════════
+
+# Lisää lausenumero per teksti
+lp_df <- lp_df %>%
+  group_by(teksti) %>%
+  mutate(lausenro = row_number()) %>%
+  ungroup()
+
+p5 <- ggplot(lp_df, aes(x = lausenro, y = lausepituus,
+                        color = nimi, fill = nimi)) +
+  geom_point(alpha = 0.3, size = 1.5, shape = 16) +
+  geom_smooth(method = "loess", span = 0.3,
+              linewidth = 1.0, alpha = 0.15) +
+  scale_color_manual(values = VARIT_NIMET) +
+  scale_fill_manual(values  = VARIT_NIMET) +
+  facet_wrap(~ nimi, ncol = 1) +
+  labs(
+    title    = "Lausepituuden vaihtelu tekstin edetessä",
+    subtitle = "Pisteet = yksittäiset lauseet, viiva = LOESS-tasoitus (span=0.3)",
+    x        = "Lausenumero",
+    y        = "Sanoja / lause",
+    caption  = "Välimerkit poistettu laskennasta"
+  ) +
+  perusteema +
+  theme(legend.position = "none")
+
+ggsave("kuvat/5_lausepituus_aika.png", p5,
+       width = 8, height = 7, dpi = 180)
+cat("✓ kuvat/5_lausepituus_aika.png\n")
+
+cat("\nKaikki kuvat tallennettu kansioon: kuvat/\n")
+
