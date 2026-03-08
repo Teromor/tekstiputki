@@ -21,7 +21,7 @@ import pandas as pd
 from scipy.stats import chi2_contingency
 
 
-# ── URL-osoitteet ──────────────────────────────────────────────────────────────
+#tiedostot
 
 import os
 import tempfile
@@ -53,7 +53,7 @@ def lataa_conllu_urlista(url: str) -> str:
     return tmp.name
 
 
-# Lataa tiedostot URLista väliaikaisiin tiedostoihin
+#lataa tiedostot URLista väliaikaisiin tiedostoihin
 print("Ladataan CoNLL-U-tiedostot...")
 TIEDOSTOT = {}
 for nimi, url in URLIT.items():
@@ -285,14 +285,14 @@ def main():
             "pos_n":          pos_n,
         }
 
-    #Chi-square (lasketaan ennen tallennusta) ───────────────────────────────
+    #Chi-square (lasketaan ennen tallennusta)
     upos_df, chi2, p, dof = chi_square_sanaluokat(
         tulokset[nimet[0]]["posmäärät"],
         tulokset[nimet[1]]["posmäärät"],
         nimet[0], nimet[1]
     )
 
-    #Tallennus: yksi CSV, yksi rivi per teksti ──────────────────────────────
+    #Tallennus: yksi CSV, yksi rivi per teksti
     rivit = []
     for nimi, t in tulokset.items():
         top_lemmat = sorted(t["sanafrekvenssi"].items(),
