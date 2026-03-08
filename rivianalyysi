@@ -1,0 +1,370 @@
+"""
+rivianalyysi.py
+=========================
+Vaihe 2: CoNLL-U-tiedostojen analyysi kahdelle tekstiaineistolle.
+Tuottaa:
+    - tulokset/lausepituudet.csv   – lausekohtaiset pituudet per teksti
+    - tulokset/ttr.csv             – TTR-arvot per teksti
+    - tulokset/sanafrekvenssi.csv  – lemmafrekvenssi per teksti
+    - tulokset/sanaluokat.csv      – sanaluokkajakaumat + chi-square
+    - tulokset/yhteenveto.csv      – kaikki tunnusluvut yhdessä taulukossa
+"""
+
+import csv
+import re
+import unicodedata
+import statistics
+import json
+from collections import defaultdict
+
+import pandas as pd
+from scipy.stats import chi2_contingency
+
+
+# ── URL-osoitteet ──────────────────────────────────────────────────────────────
+
+import os
+import tempfile
+import requests
+
+URLIT = {
+    "ihmistxt": "https://raw.githubusercontent.com/Teromor/tekstiputki/refs/heads/main/annotoitu.conllu",
+    "aitxt":    "https://raw.githubusercontent.com/Teromor/tekstiputki/refs/heads/main/annotoitu2.conllu",
+}
+
+TULOKSET_KANSIO = "tulokset"
+os.makedirs(TULOKSET_KANSIO, exist_ok=True)
+
+
+def lataa_conllu_urlista(url: str) -> str:
+    """
+    Hakee CoNLL-U-tiedoston URL:sta ja tallentaa väliaikaiseen tiedostoon.
+    Palauttaa väliaikaisen tiedoston polun.
+    """
+    print(f"  Haetaan: {url}")
+    response = requests.get(url)
+    response.raise_for_status()
+    response.encoding = "utf-8"
+
+    tmp = tempfile.NamedTemporaryFile(mode="w", suffix=".conllu",
+                                      encoding="utf-8", delete=False)
+    tmp.write(response.text)
+    tmp.close()
+    return tmp.name
+
+
+# Lataa tiedostot URLista väliaikaisiin tiedostoihin
+print("Ladataan CoNLL-U-tiedostot...")
+TIEDOSTOT = {}
+for nimi, url in URLIT.items():
+    TIEDOSTOT[nimi] = lataa_conllu_urlista(url)
+print("Lataus valmis.\n")
+
+#normalisointi
+
+def normalisoi_pintasana(sana: str) -> str | None:
+    """
+    Pintasanan normalisointi ennen TTR-laskentaa:
+      1. Muunnetaan pienaakkosiksi
+      2. Poistetaan johtavat ja päättävät välimerkit
+      3. Unicode NFC -normalisointi (säilyttää ä, ö, å)
+      4. Hylätään tyhjät ja pelkät ei-aakkosmerkit
+    Palauttaa normalisoitu merkkijono tai None (suodatetaan pois).
+    """
+    sana = sana.lower().strip()
+    # poista reunavälimerkit (ei kirjaimet, ei numerot)
+    sana = re.sub(r"^[^\w]+|[^\w]+$", "", sana, flags=re.UNICODE)
+    sana = unicodedata.normalize("NFC", sana)
+    # hylkää jos ei yhtään kirjainta (pelkkä numero tai välimerkki)
+    if not sana or not re.search(r"[a-zäöåA-ZÄÖÅ]", sana):
+        return None
+    return sana
+
+
+#lausepituudet
+
+def laske_lausepituudet(tiedostopolku: str) -> list[int]:
+    """
+    Käy CoNLL-U-tiedoston läpi rivi kerrallaan.
+    - Rivi alkaa #  → ohita (kommentti)
+    - Rivi on tyhjä → tallenna laskuri listaan, nollaa laskuri
+    - Muuten        → pilko tabulaattorilla, tarkista UPOS (indeksi 3)
+                      jos ei PUNCT → lisää laskuriin
+    """
+    pituudet = []
+    rivilaskuri = 0
+
+    with open(tiedostopolku, "r", encoding="utf-8") as f:
+        for rivi in f:
+            rivi = rivi.rstrip("\n")
+
+            if rivi.startswith("#"):
+                continue
+
+            if rivi == "":
+                if rivilaskuri > 0:
+                    pituudet.append(rivilaskuri)
+                    rivilaskuri = 0
+                continue
+
+            sarakkeet = rivi.split("\t")
+
+            # ohita multiword-tokenit (id sisältää väliviivan, esim. "1-2")
+            if "-" in sarakkeet[0] or "." in sarakkeet[0]:
+                continue
+
+            if len(sarakkeet) > 3:
+                upos = sarakkeet[3]
+                if upos != "PUNCT":
+                    rivilaskuri += 1
+
+    # viimeinen lause jos tiedosto ei pääty tyhjään riviin
+    if rivilaskuri > 0:
+        pituudet.append(rivilaskuri)
+
+    return pituudet
+
+
+#TTR
+
+def laske_ttr(tiedostopolku: str) -> dict:
+    """
+    Käy CoNLL-U-tiedoston läpi rivi kerrallaan.
+    - Rivi alkaa # tai on tyhjä → ohita
+    - Muuten:
+        pilko tabulaattorilla
+        UPOS (indeksi 3): jos PUNCT → ohita
+        tokeneita += 1
+        uniikit ← normalisoitu pintasana (indeksi 1)
+        uniikitlemmat ← lemma (indeksi 2)
+    """
+    tokeneita = 0
+    uniikit = set()
+    uniikitlemmat = set()
+
+    with open(tiedostopolku, "r", encoding="utf-8") as f:
+        for rivi in f:
+            rivi = rivi.rstrip("\n")
+
+            if rivi.startswith("#") or rivi == "":
+                continue
+
+            sarakkeet = rivi.split("\t")
+
+            # ohita multiword-tokenit
+            if "-" in sarakkeet[0] or "." in sarakkeet[0]:
+                continue
+
+            if len(sarakkeet) < 4:
+                continue
+
+            upos = sarakkeet[3]
+            if upos == "PUNCT":
+                continue
+
+            tokeneita += 1
+
+            # pintasana (indeksi 1) → normalisointi
+            pintasana = sarakkeet[1] if len(sarakkeet) > 1 else ""
+            norm = normalisoi_pintasana(pintasana)
+            if norm:
+                uniikit.add(norm)
+
+            # lemma (indeksi 2)
+            lemma = sarakkeet[2] if len(sarakkeet) > 2 else ""
+            if lemma and lemma != "_":
+                uniikitlemmat.add(lemma.lower())
+
+    ttr  = len(uniikit)      / tokeneita if tokeneita > 0 else 0
+    ttr2 = len(uniikitlemmat) / tokeneita if tokeneita > 0 else 0
+
+    return {
+        "tokeneita":      tokeneita,
+        "uniikit_norm":   len(uniikit),
+        "uniikit_lemma":  len(uniikitlemmat),
+        "ttr":            round(ttr, 4),
+        "ttr2":           round(ttr2, 4),
+    }
+
+
+#frekvenssit
+
+def laske_frekvenssit(tiedostopolku: str) -> tuple[dict, dict, int]:
+    """
+    Käy CoNLL-U-tiedoston läpi rivi kerrallaan.
+    Laskee:
+      - sanafrekvenssi: perusmuotoisten sanojen esiintymismäärät
+      - posmäärät:      sanaluokkien esiintymismäärät (PUNCT mukaan lukien)
+      - kaikki_postokenit: tokenien kokonaismäärä (PUNCT mukana %)
+    """
+    sanafrekvenssi = defaultdict(int)
+    posmäärät = defaultdict(int)
+    kaikki_postokenit = 0
+
+    with open(tiedostopolku, "r", encoding="utf-8") as f:
+        for rivi in f:
+            rivi = rivi.rstrip("\n")
+
+            if rivi.startswith("#") or rivi == "":
+                continue
+
+            sarakkeet = rivi.split("\t")
+
+            # ohita multiword-tokenit
+            if "-" in sarakkeet[0] or "." in sarakkeet[0]:
+                continue
+
+            if len(sarakkeet) < 4:
+                continue
+
+            # lemmafrekvenssi (indeksi 2), ohitetaan PUNCT
+            upos  = sarakkeet[3]
+            lemma = sarakkeet[2] if len(sarakkeet) > 2 else "_"
+
+            if upos != "PUNCT" and lemma != "_":
+                sanafrekvenssi[lemma.lower()] += 1
+
+            # sanaluokkafrekvenssi — PUNCT lasketaan mukaan jakaumaan
+            if upos and upos != "_":
+                posmäärät[upos] += 1
+                kaikki_postokenit += 1
+
+    return dict(sanafrekvenssi), dict(posmäärät), kaikki_postokenit
+
+
+#
+
+def chi_square_sanaluokat(pos1: dict, pos2: dict,
+                           nimi1: str, nimi2: str) -> tuple[pd.DataFrame, float, float, int]:
+    kaikki_upos = sorted(set(pos1) | set(pos2))
+    f1 = [pos1.get(u, 0) for u in kaikki_upos]
+    f2 = [pos2.get(u, 0) for u in kaikki_upos]
+
+    chi2, p, dof, _ = chi2_contingency([f1, f2])
+
+    df = pd.DataFrame({
+        "upos":  kaikki_upos,
+        nimi1:   f1,
+        nimi2:   f2,
+        "chi2":  round(chi2, 4),
+        "p_arvo": round(p, 6),
+        "df":    dof,
+    })
+    return df, chi2, p, dof
+
+
+#ohjelma
+
+def main():
+    nimet     = list(TIEDOSTOT.keys())
+    polut     = list(TIEDOSTOT.values())
+
+    tulokset = {}
+
+    for nimi, polku in TIEDOSTOT.items():
+        print(f"\nAnalysoidaan: {nimi} ({polku})")
+
+        lp    = laske_lausepituudet(polku)
+        ttr   = laske_ttr(polku)
+        freqt, pos, pos_n = laske_frekvenssit(polku)
+
+        pos_pct = {k: round(v / pos_n * 100, 4) for k, v in pos.items()}
+
+        tulokset[nimi] = {
+            "lausepituudet":  lp,
+            "lp_ka":          round(statistics.mean(lp), 4) if lp else 0,
+            "lp_mediaani":    statistics.median(lp) if lp else 0,
+            "lp_sd":          round(statistics.stdev(lp), 4) if len(lp) > 1 else 0,
+            "lp_min":         min(lp) if lp else 0,
+            "lp_max":         max(lp) if lp else 0,
+            "lauseiden_lkm":  len(lp),
+            **ttr,
+            "sanafrekvenssi": freqt,
+            "posmäärät":      pos,
+            "pos_pct":        pos_pct,
+            "pos_n":          pos_n,
+        }
+
+    #Chi-square (lasketaan ennen tallennusta) ───────────────────────────────
+    upos_df, chi2, p, dof = chi_square_sanaluokat(
+        tulokset[nimet[0]]["posmäärät"],
+        tulokset[nimet[1]]["posmäärät"],
+        nimet[0], nimet[1]
+    )
+
+    #Tallennus: yksi CSV, yksi rivi per teksti ──────────────────────────────
+    rivit = []
+    for nimi, t in tulokset.items():
+        top_lemmat = sorted(t["sanafrekvenssi"].items(),
+                            key=lambda x: x[1], reverse=True)[:10]
+        top_pos    = sorted(t["pos_pct"].items(),
+                            key=lambda x: x[1], reverse=True)[:5]
+        rivit.append({
+            "teksti":              nimi,
+            "lauseiden_lkm":       t["lauseiden_lkm"],
+            "tokeneita":           t["tokeneita"],
+            "uniikit_norm":        t["uniikit_norm"],
+            "uniikit_lemma":       t["uniikit_lemma"],
+            "lp_ka":               t["lp_ka"],
+            "lp_mediaani":         t["lp_mediaani"],
+            "lp_sd":               t["lp_sd"],
+            "lp_min":              t["lp_min"],
+            "lp_max":              t["lp_max"],
+            "ttr":                 t["ttr"],
+            "ttr2":                t["ttr2"],
+            "chi2":                round(chi2, 4),
+            "chi2_p":              round(p, 6),
+            "chi2_df":             dof,
+            "lausepituudet_json":  json.dumps(t["lausepituudet"],
+                                       ensure_ascii=False),
+            "sanaluokat_json":     json.dumps(t["posmäärät"],
+                                       ensure_ascii=False),
+            "sanaluokat_pct_json": json.dumps(t["pos_pct"],
+                                       ensure_ascii=False),
+            "top10_lemmat_json":   json.dumps(
+                                       [{"lemma": k, "n": v} for k, v in top_lemmat],
+                                       ensure_ascii=False),
+            "top5_pos_pct_json":   json.dumps(
+                                       [{"upos": k, "pct": v} for k, v in top_pos],
+                                       ensure_ascii=False),
+        })
+
+    pd.DataFrame(rivit).to_csv(
+        f"{TULOKSET_KANSIO}/tulokset.csv",
+        index=False, encoding="utf-8-sig"
+    )
+    print(f"\n✓ tulokset.csv tallennettu ({len(rivit)} riviä)")
+
+    #tulostus
+    print("\n── Yhteenveto ───────────────────────────────────────────────────────")
+    for nimi, t in tulokset.items():
+        print(f"\n  {nimi}")
+        print(f"    Lauseita:          {t['lauseiden_lkm']}")
+        print(f"    Tokeneita:         {t['tokeneita']}")
+        print(f"    Lausepituus ka:    {t['lp_ka']}  mediaani: {t['lp_mediaani']}  sd: {t['lp_sd']}")
+        print(f"    TTR (norm):        {t['ttr']}")
+        print(f"    TTR (lemma):       {t['ttr2']}")
+        print(f"    Sanaluokat:        {t['posmäärät']}")
+
+    print(f"\n── Chi-square (sanaluokat) ──────────────────────────────────────────")
+    print(f"    χ² = {chi2:.4f}   df = {dof}   p = {p:.6f}")
+    if p < 0.001:
+        print("    → Erittäin merkitsevä ero (p < 0.001)")
+    elif p < 0.05:
+        print("    → Merkitsevä ero (p < 0.05)")
+    else:
+        print("    → Ei tilastollisesti merkitsevää eroa (p ≥ 0.05)")
+
+    print(f"\n✓ Kaikki tulokset tallennettu kansioon: {TULOKSET_KANSIO}/")
+
+    #temptiedostojen poisto
+    for polku in TIEDOSTOT.values():
+        try:
+            os.remove(polku)
+        except OSError:
+            pass
+
+
+if __name__ == "__main__":
+    main()
+
