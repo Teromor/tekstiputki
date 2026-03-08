@@ -1,0 +1,281 @@
+"""
+analysoi_lt.py
+===========================
+Vaihe 2: CoNLL-U-tiedostojen analyysi kahdelle tekstiaineistolle.
+Kirjastopohjainen toteutus conllu-kirjastolla.
+
+Hakee tiedostot suoraan GitHub-URL:ista.
+
+Tuottaa:
+    - tulokset/tulokset.csv                  – kaikki tunnusluvut yhdessä
+    - tulokset/standardoidut_jaannokset.csv  – sanaluokkakohtainen merkitsevyys
+"""
+
+import os
+import re
+import json
+import unicodedata
+import statistics
+import tempfile
+import requests
+from collections import Counter, defaultdict
+
+import pandas as pd
+from conllu import parse
+from scipy.stats import chi2_contingency
+
+
+#urlit
+
+URLIT = {
+    "ihmistxt": "https://raw.githubusercontent.com/Teromor/tekstiputki/refs/heads/main/annotoitu.conllu",
+    "aitxt":    "https://raw.githubusercontent.com/Teromor/tekstiputki/refs/heads/main/annotoitu2.conllu",
+}
+
+TULOKSET_KANSIO = "tulokset"
+os.makedirs(TULOKSET_KANSIO, exist_ok=True)
+
+
+#tiedostonhaku
+
+def lataa_ja_jaksenna(url):
+    """Hakee CoNLL-U-tiedoston URL:sta ja jäsentää sen conllu-kirjastolla."""
+    print(f"  Haetaan: {url}")
+    response = requests.get(url)
+    response.raise_for_status()
+    response.encoding = "utf-8"
+    return parse(response.text)
+
+
+#normalisointi
+
+def normalisoi_pintasana(sana):
+    """
+    Pintasanan normalisointi ennen TTR-laskentaa:
+      1. Muunnetaan pienaakkosiksi
+      2. Poistetaan johtavat ja päättävät välimerkit
+      3. Unicode NFC -normalisointi (säilyttää ä, ö, å)
+      4. Hylätään tyhjät ja pelkät ei-aakkosmerkit
+    """
+    sana = sana.lower().strip()
+    sana = re.sub(r"^[^\w]+|[^\w]+$", "", sana, flags=re.UNICODE)
+    sana = unicodedata.normalize("NFC", sana)
+    if not sana or not re.search(r"[a-zäöåA-ZÄÖÅ]", sana):
+        return None
+    return sana
+
+
+#analyysi
+
+def analysoi(lauseet, nimi):
+    """
+    Laskee kaikki tunnusluvut yhdelle tekstille conllu-kirjaston
+    jäsentämistä lauseista.
+
+    Kirjasto hoitaa automaattisesti:
+      - multiword-tokenit (id on tuple, esim. 1-2)
+      - tyhjät solmut (id sisältää pisteen, esim. 1.1)
+      - CoNLL-U-kentät sanakirjana (token["form"], token["lemma"] jne.)
+    """
+    lausepituudet  = []
+    uniikit_norm   = set()
+    uniikit_lemma  = set()
+    tokeneita      = 0
+    sanafrekvenssi = defaultdict(int)
+    posmäärät      = defaultdict(int)
+    pos_tokeneita  = 0
+
+    for lause in lauseet:
+        # conllu-kirjasto: ohita multiword- ja tyhjät solmut
+        tokenit = [t for t in lause if isinstance(t["id"], int)]
+
+        # lausepituus ilman välimerkkejä
+        lp = sum(1 for t in tokenit if t["upostag"] != "PUNCT")
+        if lp > 0:
+            lausepituudet.append(lp)
+
+        for token in tokenit:
+            upos  = token["upostag"] or ""
+            form  = token["form"]    or ""
+            lemma = token["lemma"]   or ""
+
+            # sanaluokkajakauma (PUNCT mukaan lukien)
+            if upos and upos != "_":
+                posmäärät[upos] += 1
+                pos_tokeneita += 1
+
+            # TTR ja frekvenssi: ohita välimerkit
+            if upos == "PUNCT":
+                continue
+
+            tokeneita += 1
+
+            norm = normalisoi_pintasana(form)
+            if norm:
+                uniikit_norm.add(norm)
+
+            if lemma and lemma != "_":
+                uniikit_lemma.add(lemma.lower())
+                sanafrekvenssi[lemma.lower()] += 1
+
+    # tunnusluvut
+    lp_series = pd.Series(lausepituudet)
+    ttr  = len(uniikit_norm)  / tokeneita if tokeneita > 0 else 0
+    ttr2 = len(uniikit_lemma) / tokeneita if tokeneita > 0 else 0
+
+    pos_pct = {k: round(v / pos_tokeneita * 100, 4)
+               for k, v in posmäärät.items()}
+
+    top_lemmat = sorted(sanafrekvenssi.items(),
+                        key=lambda x: x[1], reverse=True)[:10]
+    top_pos    = sorted(pos_pct.items(),
+                        key=lambda x: x[1], reverse=True)[:5]
+
+    return {
+        "nimi":             nimi,
+        "lauseiden_lkm":    len(lausepituudet),
+        "tokeneita":        tokeneita,
+        "uniikit_norm":     len(uniikit_norm),
+        "uniikit_lemma":    len(uniikit_lemma),
+        "lp_ka":            round(float(lp_series.mean()), 4) if len(lausepituudet) > 0 else 0,
+        "lp_mediaani":      float(lp_series.median()) if len(lausepituudet) > 0 else 0,
+        "lp_sd":            round(float(lp_series.std()), 4)  if len(lausepituudet) > 1 else 0,
+        "lp_min":           int(lp_series.min()) if len(lausepituudet) > 0 else 0,
+        "lp_max":           int(lp_series.max()) if len(lausepituudet) > 0 else 0,
+        "ttr":              round(ttr, 4),
+        "ttr2":             round(ttr2, 4),
+        # raakadata jatkokäyttöön
+        "_lausepituudet":   lausepituudet,
+        "_sanafrekvenssi":  dict(sanafrekvenssi),
+        "_posmäärät":       dict(posmäärät),
+        "_pos_pct":         pos_pct,
+        "_top_lemmat":      top_lemmat,
+        "_top_pos":         top_pos,
+    }
+
+
+#chi-square + standardoidut jäännökset
+
+def chi_square_ja_jaannokset(pos1, pos2, nimi1, nimi2):
+    """
+    Chi-square-testi sanaluokkajakaumille sekä
+    standardoidut jäännökset per sanaluokka.
+
+    Standardoitu jäännös = (havaittu - odotettu) / sqrt(odotettu)
+      |arvo| > 1.96  →  tilastollisesti merkitsevä poikkeama (p < 0.05)
+      positiivinen   →  enemmän kuin odotettiin
+      negatiivinen   →  vähemmän kuin odotettiin
+    """
+    kaikki_upos = sorted(set(pos1) | set(pos2))
+    f1 = [pos1.get(u, 0) for u in kaikki_upos]
+    f2 = [pos2.get(u, 0) for u in kaikki_upos]
+
+    chi2, p, dof, odotteet = chi2_contingency([f1, f2])
+
+    # standardoidut jäännökset
+    sr_rivit = []
+    for idx, upos in enumerate(kaikki_upos):
+        sr1 = ((f1[idx] - odotteet[0][idx]) / (odotteet[0][idx] ** 0.5)
+               if odotteet[0][idx] > 0 else 0)
+        sr2 = ((f2[idx] - odotteet[1][idx]) / (odotteet[1][idx] ** 0.5)
+               if odotteet[1][idx] > 0 else 0)
+        sr_rivit.append({
+            "upos":      upos,
+            nimi1:       round(sr1, 3),
+            nimi2:       round(sr2, 3),
+            "tulkinta":  "merkitsevä" if abs(sr1) > 1.96 else "ei merkitsevä",
+        })
+
+    sr_df = pd.DataFrame(sr_rivit).sort_values(
+        nimi1, key=abs, ascending=False
+    )
+
+    return chi2, p, dof, sr_df
+
+
+#ohjelma
+
+def main():
+    print("Ladataan ja jäsennetään CoNLL-U-tiedostot...\n")
+    tulokset = {}
+    for nimi, url in URLIT.items():
+        lauseet = lataa_ja_jaksenna(url)
+        tulokset[nimi] = analysoi(lauseet, nimi)
+        print(f"  {nimi}: {tulokset[nimi]['lauseiden_lkm']} lausetta, "
+              f"{tulokset[nimi]['tokeneita']} tokenia")
+
+    nimet = list(tulokset.keys())
+    nimi1, nimi2 = nimet[0], nimet[1]
+
+    # ── Chi-square + standardoidut jäännökset ─────────────────────────────────
+    chi2, p, dof, sr_df = chi_square_ja_jaannokset(
+        tulokset[nimi1]["_posmäärät"],
+        tulokset[nimi2]["_posmäärät"],
+        nimi1, nimi2
+    )
+
+    sr_df.to_csv(
+        f"{TULOKSET_KANSIO}/standardoidut_jaannokset.csv",
+        index=False, encoding="utf-8-sig"
+    )
+
+    print("\n── Chi-square (sanaluokat) ──────────────────────────────────────────")
+    print(f"    χ² = {chi2:.4f}   df = {dof}   p = {p:.6f}")
+    if p < 0.001:
+        print("    → Erittäin merkitsevä ero (p < 0.001)")
+    elif p < 0.05:
+        print("    → Merkitsevä ero (p < 0.05)")
+    else:
+        print("    → Ei tilastollisesti merkitsevää eroa (p ≥ 0.05)")
+
+    print("\n── Standardoidut jäännökset ─────────────────────────────────────────")
+    print(sr_df.to_string(index=False))
+    print("  (|arvo| > 1.96 = tilastollisesti merkitsevä poikkeama, p < 0.05)")
+
+    # ── Tallennus: yksi CSV, yksi rivi per teksti ──────────────────────────────
+    rivit = []
+    for nimi, t in tulokset.items():
+        rivit.append({
+            "teksti":              nimi,
+            "lauseiden_lkm":       t["lauseiden_lkm"],
+            "tokeneita":           t["tokeneita"],
+            "uniikit_norm":        t["uniikit_norm"],
+            "uniikit_lemma":       t["uniikit_lemma"],
+            "lp_ka":               t["lp_ka"],
+            "lp_mediaani":         t["lp_mediaani"],
+            "lp_sd":               t["lp_sd"],
+            "lp_min":              t["lp_min"],
+            "lp_max":              t["lp_max"],
+            "ttr":                 t["ttr"],
+            "ttr2":                t["ttr2"],
+            "chi2":                round(chi2, 4),
+            "chi2_p":              round(p, 6),
+            "chi2_df":             dof,
+            "lausepituudet_json":  json.dumps(t["_lausepituudet"],
+                                       ensure_ascii=False),
+            "sanaluokat_json":     json.dumps(t["_posmäärät"],
+                                       ensure_ascii=False),
+            "sanaluokat_pct_json": json.dumps(t["_pos_pct"],
+                                       ensure_ascii=False),
+            "top10_lemmat_json":   json.dumps(
+                                       [{"lemma": k, "n": v}
+                                        for k, v in t["_top_lemmat"]],
+                                       ensure_ascii=False),
+            "top5_pos_pct_json":   json.dumps(
+                                       [{"upos": k, "pct": v}
+                                        for k, v in t["_top_pos"]],
+                                       ensure_ascii=False),
+        })
+
+    pd.DataFrame(rivit).to_csv(
+        f"{TULOKSET_KANSIO}/tulokset.csv",
+        index=False, encoding="utf-8-sig"
+    )
+
+    print(f"\n✓ tulokset.csv tallennettu ({len(rivit)} riviä)")
+    print(f"✓ standardoidut_jaannokset.csv tallennettu")
+    print(f"\nKaikki tulokset kansiossa: {TULOKSET_KANSIO}/")
+
+
+if __name__ == "__main__":
+    main()
