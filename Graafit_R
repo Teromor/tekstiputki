@@ -1,16 +1,15 @@
-# ============================================================
 # visualisoinnit.R
 # Tekstianalyysien vertailevat graafit
 # Lukee: tulokset/tulokset.csv (Python-analyysin tuotos)
 # Tuottaa: kuvat/ -kansioon PNG-tiedostot
-# ============================================================
+
 
 library(ggplot2)
 library(jsonlite)
 library(dplyr)
 library(tidyr)
 
-# ── Värit ja teema ────────────────────────────────────────────────────────────
+# Värit ja teema
 
 VARIT <- c(
   "ihmistxt" = "#2C7BB6",
@@ -41,11 +40,11 @@ perusteema <- theme_minimal(base_size = 13) +
     axis.text        = element_text(size = 10)
   )
 
-# ── Hakemistot ────────────────────────────────────────────────────────────────
+# Hakemistot
 
 dir.create("kuvat", showWarnings = FALSE)
 
-# ── Lataa data ────────────────────────────────────────────────────────────────
+# Lataa data
 
 df <- read.csv("tulokset/tulokset.csv",
                encoding = "UTF-8",
@@ -58,10 +57,7 @@ if (nrow(df) < 2) stop("tulokset.csv pitää sisältää vähintään 2 riviä."
 df$nimi <- NIMET[df$teksti]
 df$nimi <- factor(df$nimi, levels = unname(NIMET))
 
-
-# ════════════════════════════════════════════════════════════
 # 1. LAUSEPITUUKSIEN JAKAUMA — boxplot + violinplot
-# ════════════════════════════════════════════════════════════
 
 # Pura lausepituudet JSON-sarakkeesta pitkään formaattiin
 lp_lista <- lapply(seq_len(nrow(df)), function(i) {
@@ -111,10 +107,7 @@ ggsave("kuvat/1_lausepituudet.png", p1,
        width = 7, height = 5.5, dpi = 180)
 cat("✓ kuvat/1_lausepituudet.png\n")
 
-
-# ════════════════════════════════════════════════════════════
 # 2. SANALUOKKAJAKAUMAT — vaakasuora pylväsdiagrammi
-# ════════════════════════════════════════════════════════════
 
 # Pura sanaluokkaprosentit JSON-sarakkeesta
 pos_lista <- lapply(seq_len(nrow(df)), function(i) {
@@ -162,10 +155,8 @@ ggsave("kuvat/2_sanaluokat.png", p2,
        width = 8, height = 6, dpi = 180)
 cat("✓ kuvat/2_sanaluokat.png\n")
 
-
-# ════════════════════════════════════════════════════════════
 # 3. TTR-VERTAILU — pistediagrammi lumellaväleillä
-# ════════════════════════════════════════════════════════════
+
 
 ttr_df <- df %>%
   select(teksti, nimi, ttr, ttr2) %>%
@@ -206,10 +197,7 @@ ggsave("kuvat/3_ttr.png", p3,
        width = 7, height = 5.5, dpi = 180)
 cat("✓ kuvat/3_ttr.png\n")
 
-
-# ════════════════════════════════════════════════════════════
 # 4. LEMMAFREKVENSSI — top-20 sanat rinnakkain
-# ════════════════════════════════════════════════════════════
 
 TOP_N <- 20
 
@@ -275,10 +263,7 @@ ggsave("kuvat/4_lemmafrekvenssi.png", p4,
        width = 8, height = 7, dpi = 180)
 cat("✓ kuvat/4_lemmafrekvenssi.png\n")
 
-
-# ════════════════════════════════════════════════════════════
 # 5. LAUSEPITUUDET TEKSTIN EDETESSÄ — scatter + LOESS-viiva
-# ════════════════════════════════════════════════════════════
 
 # Lisää lausenumero per teksti
 lp_df <- lp_df %>%
