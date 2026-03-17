@@ -1,2 +1,2 @@
 # tekstiputki
-Pipeline yksinkertaiseen syntaktiseen annotointiin ja analyysiin
+Projektityötä varten tehty kokeilu, jossa kahta tekstiä (txt-tiedostot) verrataan toisiinsa. Collab_conllu-ohjelmalla txt-tiedostot muunnetaan conllu-tiedostoiksi (annotoitu.conllu -tiedostot). Nämä tiedostot käsitellään analyysikoodilla (joko rivianalyysi.py tai lausetasoanalyysi.py), jonka lopputuloksena on tulokset(2).csv:t. Rivianalyysikoodin logiikka avattu pdf-tiedostossa, joka on tehty ennen varsinaisen py-tiedoston kirjoittamista/generoimista. R-skriptillä tuotetaan kuvaajat, joista esimerkkinä sanaluokat_kaikki.png ja ttr.png.
